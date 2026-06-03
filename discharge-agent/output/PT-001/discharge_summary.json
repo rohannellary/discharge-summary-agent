@@ -1,0 +1,462 @@
+{
+  "_meta": {
+    "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
+    "auto_finalized": false,
+    "generated_at": "2026-06-03T09:30:18Z",
+    "patient_id": "PT-001",
+    "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
+    "total_flags": 4,
+    "requires_review_before_finalization": true
+  },
+  "patient_demographics": {
+    "name": "Margaret Chen",
+    "mrn": "MRN-884721",
+    "date_of_birth": "03/14/1958",
+    "age": "66",
+    "gender": "Female"
+  },
+  "admission_discharge_dates": {
+    "admission_date": "05/12/2024",
+    "discharge_date": "05/17/2024"
+  },
+  "diagnoses": {
+    "principal_diagnosis": "[CONFLICTING DATA \u2014 REQUIRES CLINICIAN RESOLUTION]: [admission_note p1: Diabetic Ketoacidosis (DKA)] vs [progress_note_day2 p1: Urinary Tract Infection]; [progress_note_day2 p1: Urinary Tract Infection] vs [discharge_summary p1: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis]",
+    "secondary_diagnoses": [
+      "Hypertension",
+      "Chronic Kidney Disease Stage 3",
+      "Obesity"
+    ]
+  },
+  "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent | Patient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m | PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infec",
+  "procedures": [
+    "(unremarkable)",
+    "IV access x2",
+    "Continuous cardiac monitoring",
+    "Urinalysis",
+    "Chest X-ray (unremarkable)"
+  ],
+  "allergies": [
+    "Penicillin (hives)"
+  ],
+  "medications": {
+    "discharge_medications": [
+      {
+        "name": "Insulin Glargine",
+        "dose": "20 units",
+        "reconciliation_status": "NEW (not on admission list)",
+        "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "20 mg",
+        "reconciliation_status": "DOSE CHANGED from 10 mg",
+        "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "40 mg",
+        "reconciliation_status": "Continued from admission",
+        "flag": ""
+      },
+      {
+        "name": "Aspirin",
+        "dose": "81 mg",
+        "reconciliation_status": "Continued from admission",
+        "flag": ""
+      }
+    ],
+    "discontinued_at_discharge": [
+      {
+        "name": "Metformin",
+        "admission_dose": "1000 mg",
+        "reason": "NOT DOCUMENTED \u2014 REQUIRES CLINICIAN REVIEW",
+        "flag": "\u26a0 UNDOCUMENTED"
+      }
+    ]
+  },
+  "pending_results": [
+    {
+      "test": "Urine culture (sent 05/16) \u2014 result pending",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    },
+    {
+      "test": "HbA1c \u2014 pending (sent to reference lab)",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    }
+  ],
+  "follow_up_instructions": [
+    "INSTRUCTIONS:",
+    "- Follow up with primary care physician in 1 week",
+    "- Endocrinology referral \u2014 appointment to be scheduled",
+    "- Recheck BMP in 1 week"
+  ],
+  "discharge_condition": "Stable",
+  "drug_interactions_flagged": [],
+  "clinician_review_flags": [
+    {
+      "id": "FLAG-0001",
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "message": "4 data conflict(s): Conflicting diagnoses found between documents; Conflicting diagnoses found between documents",
+      "field": "principal_diagnosis",
+      "details": {
+        "conflicts": [
+          {
+            "type": "DIAGNOSIS_CONFLICT",
+            "severity": "HIGH",
+            "description": "Conflicting diagnoses found between documents",
+            "source_a": "admission_note p1",
+            "value_a": "Diabetic Ketoacidosis (DKA)",
+            "source_b": "progress_note_day2 p1",
+            "value_b": "Urinary Tract Infection",
+            "requires_clinician_review": true,
+            "flagged_field": "principal_diagnosis"
+          },
+          {
+            "type": "DIAGNOSIS_CONFLICT",
+            "severity": "HIGH",
+            "description": "Conflicting diagnoses found between documents",
+            "source_a": "progress_note_day2 p1",
+            "value_a": "Urinary Tract Infection",
+            "source_b": "discharge_summary p1",
+            "value_b": "Type 2 Diabetes Mellitus with Diabetic Ketoacidosis",
+            "requires_clinician_review": true,
+            "flagged_field": "principal_diagnosis"
+          },
+          {
+            "type": "MEDICATION_DOSE_CONFLICT",
+            "severity": "HIGH",
+            "description": "Inconsistent doses found for lisinopril",
+            "drug": "lisinopril",
+            "doses_found": [
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "admission_note p1",
+                "dose": "10 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              },
+              {
+                "source": "discharge_summary p1",
+                "dose": "20 mg"
+              }
+            ],
+            "requires_clinician_review": true,
+            "flagged_field": "medications"
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:17Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0002",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "Medication discontinued with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "DISCONTINUED",
+        "drug": "Metformin",
+        "admission_dose": "1000 mg",
+        "discharge_dose": null,
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "Medication discontinued with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0003",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "Dose changed with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "DOSE_CHANGED",
+        "drug": "Lisinopril",
+        "admission_dose": "10 mg",
+        "discharge_dose": "20 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "Dose changed with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0004",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Insulin Glargine",
+        "admission_dose": null,
+        "discharge_dose": "20 units",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    }
+  ],
+  "conflicts_detected": [
+    {
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "description": "Conflicting diagnoses found between documents",
+      "source_a": "admission_note p1",
+      "value_a": "Diabetic Ketoacidosis (DKA)",
+      "source_b": "progress_note_day2 p1",
+      "value_b": "Urinary Tract Infection",
+      "requires_clinician_review": true,
+      "flagged_field": "principal_diagnosis"
+    },
+    {
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "description": "Conflicting diagnoses found between documents",
+      "source_a": "progress_note_day2 p1",
+      "value_a": "Urinary Tract Infection",
+      "source_b": "discharge_summary p1",
+      "value_b": "Type 2 Diabetes Mellitus with Diabetic Ketoacidosis",
+      "requires_clinician_review": true,
+      "flagged_field": "principal_diagnosis"
+    },
+    {
+      "type": "MEDICATION_DOSE_CONFLICT",
+      "severity": "HIGH",
+      "description": "Inconsistent doses found for lisinopril",
+      "drug": "lisinopril",
+      "doses_found": [
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "admission_note p1",
+          "dose": "10 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        },
+        {
+          "source": "discharge_summary p1",
+          "dose": "20 mg"
+        }
+      ],
+      "requires_clinician_review": true,
+      "flagged_field": "medications"
+    },
+    {
+      "type": "DATE_CONFLICT",
+      "severity": "MEDIUM",
+      "description": "Inconsistent discharge date across documents",
+      "field": "discharge_date",
+      "dates_found": [
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/12/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/17/2024"
+        }
+      ],
+      "requires_clinician_review": true,
+      "flagged_field": "discharge_date"
+    }
+  ]
+}

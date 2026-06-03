@@ -1,0 +1,50 @@
+
+DISCHARGE SUMMARY
+=================
+Patient Name: Margaret Chen
+MRN: MRN-884721
+Date of Birth: 03/14/1958
+Admission Date: 05/12/2024
+Discharge Date: 05/17/2024
+
+PRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis
+
+SECONDARY DIAGNOSES:
+- Hypertension
+- Chronic Kidney Disease Stage 3
+- Obesity
+
+
+DISCHARGE CONDITION: Stable
+
+ALLERGIES: Penicillin (hives)
+
+HOSPITAL COURSE:
+66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.
+
+PROCEDURES PERFORMED:
+- IV access x2
+- Continuous cardiac monitoring
+- Urinalysis
+- Chest X-ray (unremarkable)
+
+
+DISCHARGE MEDICATIONS:
+- Insulin Glargine 20 units SC Nightly
+- Lisinopril 20 mg PO Daily
+- Atorvastatin 40 mg PO Nightly
+- Aspirin 81 mg PO Daily
+
+
+PENDING RESULTS AT DISCHARGE:
+- Urine culture (sent 05/16) — result pending (PENDING)
+- HbA1c — pending (sent to reference lab) (PENDING)
+
+
+FOLLOW-UP INSTRUCTIONS:
+- Follow up with primary care physician in 1 week
+- Endocrinology referral — appointment to be scheduled
+- Recheck BMP in 1 week
+
+
+Signed: Dr. [Discharging Physician]

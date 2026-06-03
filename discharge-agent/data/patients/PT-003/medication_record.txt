@@ -1,0 +1,15 @@
+
+MEDICATION ADMINISTRATION RECORD
+==================================
+Patient: Sofia Ramirez    MRN: MRN-671209
+Period: 05/15/2024 to 05/16/2024
+
+ADMISSION MEDICATIONS (Home Medications on Admission):
+
+
+DISCHARGE MEDICATIONS:
+Ondansetron  4 mg  PO  Q8H PRN nausea
+Ibuprofen  400 mg  PO  Q6H PRN pain
+
+
+NOTE: Changes from admission medications require clinician reconciliation.

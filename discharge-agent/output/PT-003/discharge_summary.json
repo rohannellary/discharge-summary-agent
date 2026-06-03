@@ -1,0 +1,372 @@
+{
+  "_meta": {
+    "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
+    "auto_finalized": false,
+    "generated_at": "2026-06-03T09:30:18Z",
+    "patient_id": "PT-003",
+    "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
+    "total_flags": 4,
+    "requires_review_before_finalization": true
+  },
+  "patient_demographics": {
+    "name": "Sofia Ramirez",
+    "mrn": "MRN-671209",
+    "date_of_birth": "07/04/1989",
+    "age": "34",
+    "gender": "Female"
+  },
+  "admission_discharge_dates": {
+    "admission_date": "05/15/2024",
+    "discharge_date": "05/16/2024"
+  },
+  "diagnoses": {
+    "principal_diagnosis": "Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note",
+    "secondary_diagnoses": [
+      "None documented"
+    ]
+  },
+  "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | Patient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None document",
+  "procedures": [
+    "IV access",
+    "IV fluids 1L NS",
+    "CT abdomen/pelvis (pending result)",
+    "Surgical consultation"
+  ],
+  "allergies": [
+    "[MISSING \u2014 REQUIRES CLINICIAN INPUT]"
+  ],
+  "medications": {
+    "discharge_medications": [
+      {
+        "name": "Ondansetron",
+        "dose": "4 mg",
+        "reconciliation_status": "NEW (not on admission list)",
+        "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+      },
+      {
+        "name": "Ibuprofen",
+        "dose": "400 mg",
+        "reconciliation_status": "NEW (not on admission list)",
+        "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+      }
+    ],
+    "discontinued_at_discharge": []
+  },
+  "pending_results": [
+    {
+      "test": "34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    },
+    {
+      "test": "CT abdomen/pelvis (pending result)",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    },
+    {
+      "test": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    },
+    {
+      "test": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+      "status": "PENDING",
+      "note": "Result not available at time of discharge \u2014 follow-up required"
+    }
+  ],
+  "follow_up_instructions": [
+    "INSTRUCTIONS:",
+    "- Return to ED if pain worsens, fever, or unable to tolerate PO",
+    "- Follow up with PCP in 48\u201372 hours"
+  ],
+  "discharge_condition": "[MISSING \u2014 REQUIRES CLINICIAN INPUT]",
+  "drug_interactions_flagged": [],
+  "clinician_review_flags": [
+    {
+      "id": "FLAG-0001",
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "message": "1 data conflict(s): Inconsistent discharge date across documents",
+      "field": "principal_diagnosis",
+      "details": {
+        "conflicts": [
+          {
+            "type": "DATE_CONFLICT",
+            "severity": "MEDIUM",
+            "description": "Inconsistent discharge date across documents",
+            "field": "discharge_date",
+            "dates_found": [
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/15/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/16/2024"
+              }
+            ],
+            "requires_clinician_review": true,
+            "flagged_field": "discharge_date"
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0002",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Ondansetron",
+        "admission_dose": null,
+        "discharge_dose": "4 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0003",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Ibuprofen",
+        "admission_dose": null,
+        "discharge_dose": "400 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "type": "MISSING_REQUIRED_FIELD",
+      "severity": "HIGH",
+      "message": "Required fields not found in source documents: discharge_condition",
+      "field": [
+        "discharge_condition"
+      ],
+      "requires_clinician_review": true
+    }
+  ],
+  "conflicts_detected": [
+    {
+      "type": "DATE_CONFLICT",
+      "severity": "MEDIUM",
+      "description": "Inconsistent discharge date across documents",
+      "field": "discharge_date",
+      "dates_found": [
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/15/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/16/2024"
+        }
+      ],
+      "requires_clinician_review": true,
+      "flagged_field": "discharge_date"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+MEDICATION ADMINISTRATION RECORD
+==================================
+Patient: Robert Okafor    MRN: MRN-334556
+Period: 05/09/2024 to 05/14/2024
+
+ADMISSION MEDICATIONS (Home Medications on Admission):
+Warfarin  5 mg  PO  Daily
+Digoxin  0.125 mg  PO  Daily
+Metoprolol Succinate  50 mg  PO  Daily
+Furosemide  40 mg  PO  Daily
+Tiotropium  18 mcg  Inhaled  Daily
+Albuterol  2.5 mg  Neb  Q4H PRN
+
+
+DISCHARGE MEDICATIONS:
+Warfarin  5 mg  PO  Daily
+Amiodarone  200 mg  PO  Daily
+Digoxin  0.125 mg  PO  Daily
+Metoprolol Succinate  50 mg  PO  Daily
+Furosemide  40 mg  PO  Daily
+Tiotropium  18 mcg  Inhaled  Daily
+Albuterol  2.5 mg  Neb  Q4H PRN
+Azithromycin  250 mg  PO  Daily x5 days
+Prednisone  40 mg  PO  Daily x5 days
+
+
+NOTE: Changes from admission medications require clinician reconciliation.

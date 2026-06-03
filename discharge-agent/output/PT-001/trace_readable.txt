@@ -1,0 +1,69 @@
+AGENT TRACE — Patient PT-001
+============================================================
+
+[Step 1] Action: ingest_pdfs
+  Reasoning: First step: ingest all patient PDFs
+  Result: {'sections': {'demographics': [{'source': 'admission_note', 'page': 1, 'text': 'ADMISSION NOTE\n==============\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAge: 66 years o
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 11ms
+
+[Step 2] Action: detect_conflicts
+  Reasoning: Check for cross-document contradictions
+  Result: {'conflicts': [{'type': 'DIAGNOSIS_CONFLICT', 'severity': 'HIGH', 'description': 'Conflicting diagnoses found between documents', 'source_a': 'admission_note p1', 'value_a': 'Diabetic Ketoacidosis (DK
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 23ms
+
+[Step 3] Action: escalate
+  Reasoning: Found 4 conflict(s) — escalating all as single flag
+  Result: {'id': 'FLAG-0001', 'type': 'DIAGNOSIS_CONFLICT', 'severity': 'HIGH', 'message': '4 data conflict(s): Conflicting diagnoses found between documents; Conflicting diagnoses found between documents', 'fi
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 0ms
+
+[Step 4] Action: reconcile_meds
+  Reasoning: Compare admission vs discharge medications
+  Result: {'admission_medication_count': 4, 'discharge_medication_count': 4, 'changes': [{'type': 'DISCONTINUED', 'drug': 'Metformin', 'admission_dose': '1000 mg', 'discharge_dose': None, 'reason_documented': N
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 8ms
+
+[Step 5] Action: check_drug_interactions
+  Reasoning: Check discharge medications for interactions
+  Result: {'interactions': [], 'major_count': 0, 'moderate_count': 0, 'minor_count': 0, 'checked': True, 'drugs_checked': ['insulin glargine', 'lisinopril', 'atorvastatin', 'aspirin'], 'note': 'Checked 6 drug p
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 0ms
+
+[Step 6] Action: check_pending
+  Reasoning: Find all pending/outstanding results
+  Result: {'pending': [{'test_or_result': 'Urine culture (sent 05/16) — result pending', 'status': 'PENDING', 'source': 'progress_note_day2 p1', 'requires_follow_up': True, 'note': 'Result pending — must NOT be
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 36ms
+
+[Step 7] Action: escalate
+  Reasoning: Undocumented med change #1: Metformin — escalating
+  Result: {'id': 'FLAG-0002', 'type': 'UNDOCUMENTED_MED_CHANGE', 'severity': 'HIGH', 'message': 'Medication discontinued with no documented reason', 'field': 'medications', 'details': {'type': 'DISCONTINUED', '
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 0ms
+
+[Step 8] Action: escalate
+  Reasoning: Undocumented med change #2: Lisinopril — escalating
+  Result: {'id': 'FLAG-0003', 'type': 'UNDOCUMENTED_MED_CHANGE', 'severity': 'HIGH', 'message': 'Dose changed with no documented reason', 'field': 'medications', 'details': {'type': 'DOSE_CHANGED', 'drug': 'Lis
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 0ms
+
+[Step 9] Action: escalate
+  Reasoning: Undocumented med change #3: Insulin Glargine — escalating
+  Result: {'id': 'FLAG-0004', 'type': 'UNDOCUMENTED_MED_CHANGE', 'severity': 'HIGH', 'message': 'New medication added with no documented reason', 'field': 'medications', 'details': {'type': 'NEW', 'drug': 'Insu
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 0ms
+
+[Step 10] Action: build_summary
+  Reasoning: All checks complete — assembling final discharge summary draft
+  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-03T09:30:18Z', 'patient_id': 'PT-001', 'warning': 'THIS IS AN AI-GE
+  Next: Tool succeeded — updating state and re-planning
+  Duration: 5ms
+
+[Step 11] Action: DONE
+  Reasoning: Summary built — all flags raised — done
+  Result: Agent decided work is complete
+  Next: Finalizing output
+  Duration: 0ms
+

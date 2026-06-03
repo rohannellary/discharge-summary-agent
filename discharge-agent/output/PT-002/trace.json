@@ -1,0 +1,1553 @@
+[
+  {
+    "step": 1,
+    "reasoning": "First step: ingest all patient PDFs",
+    "action": "ingest_pdfs",
+    "inputs": {
+      "pdf_paths": [
+        "/home/claude/discharge-agent/data/patients/PT-002/admission_note.txt",
+        "/home/claude/discharge-agent/data/patients/PT-002/progress_note_day2.txt",
+        "/home/claude/discharge-agent/data/patients/PT-002/discharge_summary.txt",
+        "/home/claude/discharge-agent/data/patients/PT-002/lab_results.txt",
+        "/home/claude/discharge-agent/data/patients/PT-002/medication_record.txt"
+      ]
+    },
+    "result": {
+      "sections": {
+        "demographics": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "lab_results",
+            "page": 1,
+            "text": "LABORATORY RESULTS\n==================\nPatient: Robert Okafor    MRN: MRN-334556\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nSputum culture \u2014 pending (ordered 05/09)\nINR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nReport generated by: Laboratory Information System",
+            "method": "plaintext"
+          },
+          {
+            "source": "medication_record",
+            "page": 1,
+            "text": "MEDICATION ADMINISTRATION RECORD\n==================================\nPatient: Robert Okafor    MRN: MRN-334556\nPeriod: 05/09/2024 to 05/14/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nWarfarin  5 mg  PO  Daily\nDigoxin  0.125 mg  PO  Daily\nMetoprolol Succinate  50 mg  PO  Daily\nFurosemide  40 mg  PO  Daily\nTiotropium  18 mcg  Inhaled  Daily\nAlbuterol  2.5 mg  Neb  Q4H PRN\n\n\nDISCHARGE MEDICATIONS:\nWarfarin  5 mg  PO  Daily\nAmiodarone  200 mg  PO  Daily\nDigoxin  0.125 mg  PO  Daily\nMetoprolol Succinate  50 mg  PO  Daily\nFurosemide  40 mg  PO  Daily\nTiotropium  18 mcg  Inhaled  Daily\nAlbuterol  2.5 mg  Neb  Q4H PRN\nAzithromycin  250 mg  PO  Daily x5 days\nPrednisone  40 mg  PO  Daily x5 days\n\n\nNOTE: Changes from admission medications require clinician reconciliation.",
+            "method": "plaintext"
+          }
+        ],
+        "admission": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "medications": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "lab_results",
+            "page": 1,
+            "text": "LABORATORY RESULTS\n==================\nPatient: Robert Okafor    MRN: MRN-334556\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nSputum culture \u2014 pending (ordered 05/09)\nINR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nReport generated by: Laboratory Information System",
+            "method": "plaintext"
+          },
+          {
+            "source": "medication_record",
+            "page": 1,
+            "text": "MEDICATION ADMINISTRATION RECORD\n==================================\nPatient: Robert Okafor    MRN: MRN-334556\nPeriod: 05/09/2024 to 05/14/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nWarfarin  5 mg  PO  Daily\nDigoxin  0.125 mg  PO  Daily\nMetoprolol Succinate  50 mg  PO  Daily\nFurosemide  40 mg  PO  Daily\nTiotropium  18 mcg  Inhaled  Daily\nAlbuterol  2.5 mg  Neb  Q4H PRN\n\n\nDISCHARGE MEDICATIONS:\nWarfarin  5 mg  PO  Daily\nAmiodarone  200 mg  PO  Daily\nDigoxin  0.125 mg  PO  Daily\nMetoprolol Succinate  50 mg  PO  Daily\nFurosemide  40 mg  PO  Daily\nTiotropium  18 mcg  Inhaled  Daily\nAlbuterol  2.5 mg  Neb  Q4H PRN\nAzithromycin  250 mg  PO  Daily x5 days\nPrednisone  40 mg  PO  Daily x5 days\n\n\nNOTE: Changes from admission medications require clinician reconciliation.",
+            "method": "plaintext"
+          }
+        ],
+        "allergies": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "vitals": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "procedures": [
+          {
+            "source": "admission_note",
+            "page": 1,
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years old\nGender: Male\n\nAdmission Date: 05/09/2024\n\nADMITTING DIAGNOSIS: Acute Exacerbation of COPD\n\nALLERGIES: NKDA\n\nCHIEF COMPLAINT:\nPatient presents with acute exacerbation of copd.\n\nHISTORY OF PRESENT ILLNESS:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nADMISSION MEDICATIONS:\n- Warfarin 5 mg Daily\n- Digoxin 0.125 mg Daily\n- Metoprolol Succinate 50 mg Daily\n- Furosemide 40 mg Daily\n- Tiotropium 18 mcg Daily\n- Albuterol 2.5 mg Q4H PRN\n\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\nSigned: Dr. [Admitting Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "progress_notes": [
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "discharge": [
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          }
+        ],
+        "labs": [
+          {
+            "source": "progress_note_day2",
+            "page": 1,
+            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum culture \u2014 pending (ordered 05/09)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nSigned: Dr. [Covering Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          },
+          {
+            "source": "lab_results",
+            "page": 1,
+            "text": "LABORATORY RESULTS\n==================\nPatient: Robert Okafor    MRN: MRN-334556\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nSputum culture \u2014 pending (ordered 05/09)\nINR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available\n\n\nReport generated by: Laboratory Information System",
+            "method": "plaintext"
+          }
+        ],
+        "follow_up": [
+          {
+            "source": "discharge_summary",
+            "page": 1,
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR \u2014 amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.\n\nPROCEDURES PERFORMED:\n- Chest X-ray (RLL infiltrate)\n- CT chest without contrast\n- Sputum collection for culture\n- Echocardiogram (EF 35%)\n\n\nDISCHARGE MEDICATIONS:\n- Warfarin 5 mg PO Daily\n- Amiodarone 200 mg PO Daily\n- Digoxin 0.125 mg PO Daily\n- Metoprolol Succinate 50 mg PO Daily\n- Furosemide 40 mg PO Daily\n- Tiotropium 18 mcg Inhaled Daily\n- Albuterol 2.5 mg Neb Q4H PRN\n- Azithromycin 250 mg PO Daily x5 days\n- Prednisone 40 mg PO Daily x5 days\n\n\nPENDING RESULTS AT DISCHARGE:\n- Sputum culture \u2014 pending (ordered 05/09) (PENDING)\n- INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Pulmonology follow-up in 2 weeks\n- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring\n- Repeat CXR in 4 weeks\n- Resume Warfarin per home dose; INR to be checked by PCP within 3 days\n\n\nSigned: Dr. [Discharging Physician]",
+            "method": "plaintext"
+          }
+        ]
+      },
+      "page_inventory": [
+        {
+          "source": "admission_note",
+          "page": 1,
+          "sections": [
+            "demographics",
+            "admission",
+            "medications",
+            "allergies",
+            "vitals",
+            "procedures"
+          ],
+          "text_length": 1318,
+          "method": "plaintext"
+        },
+        {
+          "source": "progress_note_day2",
+          "page": 1,
+          "sections": [
+            "demographics",
+            "progress_notes",
+            "discharge",
+            "labs",
+            "medications",
+            "vitals"
+          ],
+          "text_length": 642,
+          "method": "plaintext"
+        },
+        {
+          "source": "discharge_summary",
+          "page": 1,
+          "sections": [
+            "demographics",
+            "admission",
+            "discharge",
+            "labs",
+            "medications",
+            "allergies",
+            "procedures",
+            "follow_up"
+          ],
+          "text_length": 1690,
+          "method": "plaintext"
+        },
+        {
+          "source": "lab_results",
+          "page": 1,
+          "sections": [
+            "demographics",
+            "labs",
+            "medications"
+          ],
+          "text_length": 714,
+          "method": "plaintext"
+        },
+        {
+          "source": "medication_record",
+          "page": 1,
+          "sections": [
+            "demographics",
+            "medications"
+          ],
+          "text_length": 787,
+          "method": "plaintext"
+        }
+      ],
+      "errors": [],
+      "structured": {
+        "demographics": {
+          "name": "Robert Okafor",
+          "dob": "11/28/1945",
+          "mrn": "MRN-334556",
+          "age": "78",
+          "gender": "Male",
+          "admission_date": "05/09/2024",
+          "discharge_date": "05/14/2024"
+        },
+        "diagnoses": {
+          "principal": "Acute Exacerbation of COPD, Community-Acquired Pneumonia",
+          "secondary": [
+            "Atrial Fibrillation",
+            "Heart Failure with reduced EF (HFrEF)",
+            "Type 2 Diabetes"
+          ],
+          "discharge_condition": "Improved"
+        },
+        "admission_medications": [
+          {
+            "name": "Warfarin",
+            "dose": "5 mg",
+            "raw_line": "Warfarin  5 mg  PO  Daily"
+          },
+          {
+            "name": "Digoxin",
+            "dose": "0.125 mg",
+            "raw_line": "Digoxin  0.125 mg  PO  Daily"
+          },
+          {
+            "name": "Metoprolol Succinate",
+            "dose": "50 mg",
+            "raw_line": "Metoprolol Succinate  50 mg  PO  Daily"
+          },
+          {
+            "name": "Furosemide",
+            "dose": "40 mg",
+            "raw_line": "Furosemide  40 mg  PO  Daily"
+          },
+          {
+            "name": "Tiotropium",
+            "dose": "18 mcg",
+            "raw_line": "Tiotropium  18 mcg  Inhaled  Daily"
+          },
+          {
+            "name": "Albuterol",
+            "dose": "2.5 mg",
+            "raw_line": "Albuterol  2.5 mg  Neb  Q4H PRN"
+          }
+        ],
+        "discharge_medications": [
+          {
+            "name": "Warfarin",
+            "dose": "5 mg",
+            "raw_line": "Warfarin  5 mg  PO  Daily"
+          },
+          {
+            "name": "Amiodarone",
+            "dose": "200 mg",
+            "raw_line": "Amiodarone  200 mg  PO  Daily"
+          },
+          {
+            "name": "Digoxin",
+            "dose": "0.125 mg",
+            "raw_line": "Digoxin  0.125 mg  PO  Daily"
+          },
+          {
+            "name": "Metoprolol Succinate",
+            "dose": "50 mg",
+            "raw_line": "Metoprolol Succinate  50 mg  PO  Daily"
+          },
+          {
+            "name": "Furosemide",
+            "dose": "40 mg",
+            "raw_line": "Furosemide  40 mg  PO  Daily"
+          },
+          {
+            "name": "Tiotropium",
+            "dose": "18 mcg",
+            "raw_line": "Tiotropium  18 mcg  Inhaled  Daily"
+          },
+          {
+            "name": "Albuterol",
+            "dose": "2.5 mg",
+            "raw_line": "Albuterol  2.5 mg  Neb  Q4H PRN"
+          },
+          {
+            "name": "Azithromycin",
+            "dose": "250 mg",
+            "raw_line": "Azithromycin  250 mg  PO  Daily x5 days"
+          },
+          {
+            "name": "Prednisone",
+            "dose": "40 mg",
+            "raw_line": "Prednisone  40 mg  PO  Daily x5 days"
+          }
+        ],
+        "allergies": [
+          "NKDA (No Known Drug Allergies)"
+        ],
+        "pending_labs": [
+          {
+            "test": "Sputum culture \u2014 pending (ordered 05/09)",
+            "status": "PENDING",
+            "requires_follow_up": true,
+            "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
+          },
+          {
+            "test": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+            "status": "PENDING",
+            "requires_follow_up": true,
+            "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
+          },
+          {
+            "test": "PENDING RESULTS AT DISCHARGE:",
+            "status": "PENDING",
+            "requires_follow_up": true,
+            "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
+          },
+          {
+            "test": "PENDING RESULTS:",
+            "status": "PENDING",
+            "requires_follow_up": true,
+            "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
+          }
+        ],
+        "follow_up_instructions": [
+          "INSTRUCTIONS:",
+          "- Pulmonology follow-up in 2 weeks",
+          "- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring",
+          "- Repeat CXR in 4 weeks",
+          "- Resume Warfarin per home dose; INR to be checked by PCP within 3 days"
+        ],
+        "hospital_course_raw": [
+          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu",
+          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu",
+          "[discharge_summary p1]: DISCHARGE SUMMARY\n=================\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibrillation\n- Heart Failure with reduced EF (HFrEF)\n- Type 2 Diabetes\n\n\nDISCHARGE CONDITION: Improved\n\nALLERGIES: NKDA\n\nHOSPITAL COURSE:\n78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL "
+        ]
+      }
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0235817,
+    "duration_ms": 3.047943115234375,
+    "error": null
+  },
+  {
+    "step": 2,
+    "reasoning": "Check for cross-document contradictions",
+    "action": "detect_conflicts",
+    "inputs": {},
+    "result": {
+      "conflicts": [
+        {
+          "type": "DATE_CONFLICT",
+          "severity": "MEDIUM",
+          "description": "Inconsistent discharge date across documents",
+          "field": "discharge_date",
+          "dates_found": [
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            }
+          ],
+          "requires_clinician_review": true,
+          "flagged_field": "discharge_date"
+        }
+      ]
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0441837,
+    "duration_ms": 20.529747009277344,
+    "error": null
+  },
+  {
+    "step": 3,
+    "reasoning": "Found 1 conflict(s) \u2014 escalating all as single flag",
+    "action": "escalate",
+    "inputs": {
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "message": "1 data conflict(s): Inconsistent discharge date across documents",
+      "field": "principal_diagnosis",
+      "details": {
+        "conflicts": [
+          {
+            "type": "DATE_CONFLICT",
+            "severity": "MEDIUM",
+            "description": "Inconsistent discharge date across documents",
+            "field": "discharge_date",
+            "dates_found": [
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              }
+            ],
+            "requires_clinician_review": true,
+            "flagged_field": "discharge_date"
+          }
+        ]
+      }
+    },
+    "result": {
+      "id": "FLAG-0001",
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "message": "1 data conflict(s): Inconsistent discharge date across documents",
+      "field": "principal_diagnosis",
+      "details": {
+        "conflicts": [
+          {
+            "type": "DATE_CONFLICT",
+            "severity": "MEDIUM",
+            "description": "Inconsistent discharge date across documents",
+            "field": "discharge_date",
+            "dates_found": [
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              }
+            ],
+            "requires_clinician_review": true,
+            "flagged_field": "discharge_date"
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.044276,
+    "duration_ms": 0.053882598876953125,
+    "error": null
+  },
+  {
+    "step": 4,
+    "reasoning": "Compare admission vs discharge medications",
+    "action": "reconcile_meds",
+    "inputs": {},
+    "result": {
+      "admission_medication_count": 6,
+      "discharge_medication_count": 9,
+      "changes": [
+        {
+          "type": "CONTINUED",
+          "drug": "Warfarin",
+          "admission_dose": "5 mg",
+          "discharge_dose": "5 mg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "CONTINUED",
+          "drug": "Digoxin",
+          "admission_dose": "0.125 mg",
+          "discharge_dose": "0.125 mg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "CONTINUED",
+          "drug": "Metoprolol Succinate",
+          "admission_dose": "50 mg",
+          "discharge_dose": "50 mg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "CONTINUED",
+          "drug": "Furosemide",
+          "admission_dose": "40 mg",
+          "discharge_dose": "40 mg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "CONTINUED",
+          "drug": "Tiotropium",
+          "admission_dose": "18 mcg",
+          "discharge_dose": "18 mcg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "CONTINUED",
+          "drug": "Albuterol",
+          "admission_dose": "2.5 mg",
+          "discharge_dose": "2.5 mg",
+          "reason_documented": null,
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "NEW",
+          "drug": "Amiodarone",
+          "admission_dose": null,
+          "discharge_dose": "200 mg",
+          "reason_documented": "rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days th",
+          "flag_for_review": false,
+          "flag_reason": null
+        },
+        {
+          "type": "NEW",
+          "drug": "Azithromycin",
+          "admission_dose": null,
+          "discharge_dose": "250 mg",
+          "reason_documented": null,
+          "flag_for_review": true,
+          "flag_reason": "New medication added with no documented reason"
+        },
+        {
+          "type": "NEW",
+          "drug": "Prednisone",
+          "admission_dose": null,
+          "discharge_dose": "40 mg",
+          "reason_documented": null,
+          "flag_for_review": true,
+          "flag_reason": "New medication added with no documented reason"
+        }
+      ],
+      "changes_requiring_review": [
+        {
+          "type": "NEW",
+          "drug": "Azithromycin",
+          "admission_dose": null,
+          "discharge_dose": "250 mg",
+          "reason_documented": null,
+          "flag_for_review": true,
+          "flag_reason": "New medication added with no documented reason"
+        },
+        {
+          "type": "NEW",
+          "drug": "Prednisone",
+          "admission_dose": null,
+          "discharge_dose": "40 mg",
+          "reason_documented": null,
+          "flag_for_review": true,
+          "flag_reason": "New medication added with no documented reason"
+        }
+      ],
+      "reconciliation_complete": true,
+      "note": "Medication reconciliation performed. All flagged changes require clinician review before finalization."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0533173,
+    "duration_ms": 8.969306945800781,
+    "error": null
+  },
+  {
+    "step": 5,
+    "reasoning": "Check discharge medications for interactions",
+    "action": "check_drug_interactions",
+    "inputs": {},
+    "result": {
+      "interactions": [
+        {
+          "drug_a": "warfarin",
+          "drug_b": "amiodarone",
+          "severity": "MAJOR",
+          "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+          "clinical_significance": "HIGH",
+          "requires_clinician_review": true,
+          "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+        },
+        {
+          "drug_a": "amiodarone",
+          "drug_b": "digoxin",
+          "severity": "MAJOR",
+          "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+          "clinical_significance": "HIGH",
+          "requires_clinician_review": true,
+          "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+        }
+      ],
+      "major_count": 2,
+      "moderate_count": 0,
+      "minor_count": 0,
+      "checked": true,
+      "drugs_checked": [
+        "warfarin",
+        "amiodarone",
+        "digoxin",
+        "metoprolol succinate",
+        "furosemide",
+        "tiotropium",
+        "albuterol",
+        "azithromycin",
+        "prednisone"
+      ],
+      "note": "Checked 36 drug pairs. Found 2 interactions (2 major, 0 moderate)."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0534582,
+    "duration_ms": 0.11205673217773438,
+    "error": null
+  },
+  {
+    "step": 6,
+    "reasoning": "Found 2 MAJOR drug interaction(s) \u2014 escalating as CRITICAL flag",
+    "action": "escalate",
+    "inputs": {
+      "type": "DRUG_INTERACTION",
+      "severity": "CRITICAL",
+      "message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.; MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+      "field": "medications",
+      "details": {
+        "interactions": [
+          {
+            "drug_a": "warfarin",
+            "drug_b": "amiodarone",
+            "severity": "MAJOR",
+            "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+          },
+          {
+            "drug_a": "amiodarone",
+            "drug_b": "digoxin",
+            "severity": "MAJOR",
+            "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+          }
+        ]
+      }
+    },
+    "result": {
+      "id": "FLAG-0002",
+      "type": "DRUG_INTERACTION",
+      "severity": "CRITICAL",
+      "message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.; MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+      "field": "medications",
+      "details": {
+        "interactions": [
+          {
+            "drug_a": "warfarin",
+            "drug_b": "amiodarone",
+            "severity": "MAJOR",
+            "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+          },
+          {
+            "drug_a": "amiodarone",
+            "drug_b": "digoxin",
+            "severity": "MAJOR",
+            "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0535297,
+    "duration_ms": 0.04863739013671875,
+    "error": null
+  },
+  {
+    "step": 7,
+    "reasoning": "Find all pending/outstanding results",
+    "action": "check_pending",
+    "inputs": {},
+    "result": {
+      "pending": [
+        {
+          "test_or_result": "Sputum culture \u2014 pending (ordered 05/09)",
+          "status": "PENDING",
+          "source": "progress_note_day2 p1",
+          "requires_follow_up": true,
+          "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
+        },
+        {
+          "test_or_result": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+          "status": "PENDING",
+          "source": "progress_note_day2 p1",
+          "requires_follow_up": true,
+          "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
+        },
+        {
+          "test_or_result": "culture\n-",
+          "status": "PENDING",
+          "source": "admission_note p1",
+          "requires_follow_up": true,
+          "note": "Lab ordered but no result present in documents."
+        }
+      ],
+      "count": 3,
+      "note": "Found 3 pending items. These must appear in the discharge summary as PENDING \u2014 never filled with assumed values."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0925803,
+    "duration_ms": 38.96522521972656,
+    "error": null
+  },
+  {
+    "step": 8,
+    "reasoning": "Undocumented med change #1: Azithromycin \u2014 escalating",
+    "action": "escalate",
+    "inputs": {
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Azithromycin",
+        "admission_dose": null,
+        "discharge_dose": "250 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      }
+    },
+    "result": {
+      "id": "FLAG-0003",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Azithromycin",
+        "admission_dose": null,
+        "discharge_dose": "250 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0927112,
+    "duration_ms": 0.10275840759277344,
+    "error": null
+  },
+  {
+    "step": 9,
+    "reasoning": "Undocumented med change #2: Prednisone \u2014 escalating",
+    "action": "escalate",
+    "inputs": {
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Prednisone",
+        "admission_dose": null,
+        "discharge_dose": "40 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      }
+    },
+    "result": {
+      "id": "FLAG-0004",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Prednisone",
+        "admission_dose": null,
+        "discharge_dose": "40 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.0927784,
+    "duration_ms": 0.039577484130859375,
+    "error": null
+  },
+  {
+    "step": 10,
+    "reasoning": "All checks complete \u2014 assembling final discharge summary draft",
+    "action": "build_summary",
+    "inputs": {},
+    "result": {
+      "_meta": {
+        "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
+        "auto_finalized": false,
+        "generated_at": "2026-06-03T09:30:18Z",
+        "patient_id": "PT-002",
+        "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
+        "total_flags": 4,
+        "requires_review_before_finalization": true
+      },
+      "patient_demographics": {
+        "name": "Robert Okafor",
+        "mrn": "MRN-334556",
+        "date_of_birth": "11/28/1945",
+        "age": "78",
+        "gender": "Male"
+      },
+      "admission_discharge_dates": {
+        "admission_date": "05/09/2024",
+        "discharge_date": "05/14/2024"
+      },
+      "diagnoses": {
+        "principal_diagnosis": "Acute Exacerbation of COPD, Community-Acquired Pneumonia",
+        "secondary_diagnoses": [
+          "Atrial Fibrillation",
+          "Heart Failure with reduced EF (HFrEF)",
+          "Type 2 Diabetes"
+        ]
+      },
+      "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | PROGRESS NOTE \u2014 Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | Patient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibril",
+      "procedures": [
+        "(RLL infiltrate)",
+        "(EF 35%)",
+        "Chest X-ray (RLL infiltrate)",
+        "CT chest without contrast",
+        "Sputum collection for culture",
+        "Echocardiogram (EF 35%)"
+      ],
+      "allergies": [
+        "NKDA (No Known Drug Allergies)"
+      ],
+      "medications": {
+        "discharge_medications": [
+          {
+            "name": "Warfarin",
+            "dose": "5 mg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Amiodarone",
+            "dose": "200 mg",
+            "reconciliation_status": "NEW (not on admission list)",
+            "flag": ""
+          },
+          {
+            "name": "Digoxin",
+            "dose": "0.125 mg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Metoprolol Succinate",
+            "dose": "50 mg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Furosemide",
+            "dose": "40 mg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Tiotropium",
+            "dose": "18 mcg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Albuterol",
+            "dose": "2.5 mg",
+            "reconciliation_status": "Continued from admission",
+            "flag": ""
+          },
+          {
+            "name": "Azithromycin",
+            "dose": "250 mg",
+            "reconciliation_status": "NEW (not on admission list)",
+            "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+          },
+          {
+            "name": "Prednisone",
+            "dose": "40 mg",
+            "reconciliation_status": "NEW (not on admission list)",
+            "flag": "\u26a0 UNDOCUMENTED \u2014 reason not found"
+          }
+        ],
+        "discontinued_at_discharge": []
+      },
+      "pending_results": [
+        {
+          "test": "Sputum culture \u2014 pending (ordered 05/09)",
+          "status": "PENDING",
+          "note": "Result not available at time of discharge \u2014 follow-up required"
+        },
+        {
+          "test": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+          "status": "PENDING",
+          "note": "Result not available at time of discharge \u2014 follow-up required"
+        },
+        {
+          "test": "culture\n-",
+          "status": "PENDING",
+          "note": "Result not available at time of discharge \u2014 follow-up required"
+        }
+      ],
+      "follow_up_instructions": [
+        "INSTRUCTIONS:",
+        "- Pulmonology follow-up in 2 weeks",
+        "- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring",
+        "- Repeat CXR in 4 weeks",
+        "- Resume Warfarin per home dose; INR to be checked by PCP within 3 days"
+      ],
+      "discharge_condition": "Improved",
+      "drug_interactions_flagged": [
+        {
+          "drugs": "warfarin + amiodarone",
+          "severity": "MAJOR",
+          "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+        },
+        {
+          "drugs": "amiodarone + digoxin",
+          "severity": "MAJOR",
+          "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+        }
+      ],
+      "clinician_review_flags": [
+        {
+          "id": "FLAG-0001",
+          "type": "DIAGNOSIS_CONFLICT",
+          "severity": "HIGH",
+          "message": "1 data conflict(s): Inconsistent discharge date across documents",
+          "field": "principal_diagnosis",
+          "details": {
+            "conflicts": [
+              {
+                "type": "DATE_CONFLICT",
+                "severity": "MEDIUM",
+                "description": "Inconsistent discharge date across documents",
+                "field": "discharge_date",
+                "dates_found": [
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "admission_note p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/09/2024"
+                  },
+                  {
+                    "source": "discharge_summary p1",
+                    "date": "05/14/2024"
+                  }
+                ],
+                "requires_clinician_review": true,
+                "flagged_field": "discharge_date"
+              }
+            ]
+          },
+          "requires_clinician_review": true,
+          "auto_resolved": false,
+          "timestamp": "2026-06-03T09:30:18Z",
+          "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+        },
+        {
+          "id": "FLAG-0002",
+          "type": "DRUG_INTERACTION",
+          "severity": "CRITICAL",
+          "message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.; MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+          "field": "medications",
+          "details": {
+            "interactions": [
+              {
+                "drug_a": "warfarin",
+                "drug_b": "amiodarone",
+                "severity": "MAJOR",
+                "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+                "clinical_significance": "HIGH",
+                "requires_clinician_review": true,
+                "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+              },
+              {
+                "drug_a": "amiodarone",
+                "drug_b": "digoxin",
+                "severity": "MAJOR",
+                "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+                "clinical_significance": "HIGH",
+                "requires_clinician_review": true,
+                "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+              }
+            ]
+          },
+          "requires_clinician_review": true,
+          "auto_resolved": false,
+          "timestamp": "2026-06-03T09:30:18Z",
+          "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+        },
+        {
+          "id": "FLAG-0003",
+          "type": "UNDOCUMENTED_MED_CHANGE",
+          "severity": "HIGH",
+          "message": "New medication added with no documented reason",
+          "field": "medications",
+          "details": {
+            "type": "NEW",
+            "drug": "Azithromycin",
+            "admission_dose": null,
+            "discharge_dose": "250 mg",
+            "reason_documented": null,
+            "flag_for_review": true,
+            "flag_reason": "New medication added with no documented reason"
+          },
+          "requires_clinician_review": true,
+          "auto_resolved": false,
+          "timestamp": "2026-06-03T09:30:18Z",
+          "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+        },
+        {
+          "id": "FLAG-0004",
+          "type": "UNDOCUMENTED_MED_CHANGE",
+          "severity": "HIGH",
+          "message": "New medication added with no documented reason",
+          "field": "medications",
+          "details": {
+            "type": "NEW",
+            "drug": "Prednisone",
+            "admission_dose": null,
+            "discharge_dose": "40 mg",
+            "reason_documented": null,
+            "flag_for_review": true,
+            "flag_reason": "New medication added with no documented reason"
+          },
+          "requires_clinician_review": true,
+          "auto_resolved": false,
+          "timestamp": "2026-06-03T09:30:18Z",
+          "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+        }
+      ],
+      "conflicts_detected": [
+        {
+          "type": "DATE_CONFLICT",
+          "severity": "MEDIUM",
+          "description": "Inconsistent discharge date across documents",
+          "field": "discharge_date",
+          "dates_found": [
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "admission_note p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/09/2024"
+            },
+            {
+              "source": "discharge_summary p1",
+              "date": "05/14/2024"
+            }
+          ],
+          "requires_clinician_review": true,
+          "flagged_field": "discharge_date"
+        }
+      ]
+    },
+    "next_decision": "Tool succeeded \u2014 updating state and re-planning",
+    "timestamp": 1780479018.098058,
+    "duration_ms": 5.059957504272461,
+    "error": null
+  },
+  {
+    "step": 11,
+    "reasoning": "Summary built \u2014 all flags raised \u2014 done",
+    "action": "DONE",
+    "inputs": {},
+    "result": "Agent decided work is complete",
+    "next_decision": "Finalizing output",
+    "timestamp": 1780479018.0981023,
+    "duration_ms": 0.0,
+    "error": null
+  }
+]

@@ -1,0 +1,21 @@
+
+MEDICATION ADMINISTRATION RECORD
+==================================
+Patient: Margaret Chen    MRN: MRN-884721
+Period: 05/12/2024 to 05/17/2024
+
+ADMISSION MEDICATIONS (Home Medications on Admission):
+Metformin  1000 mg  PO  BID
+Lisinopril  10 mg  PO  Daily
+Atorvastatin  40 mg  PO  Nightly
+Aspirin  81 mg  PO  Daily
+
+
+DISCHARGE MEDICATIONS:
+Insulin Glargine  20 units  SC  Nightly
+Lisinopril  20 mg  PO  Daily
+Atorvastatin  40 mg  PO  Nightly
+Aspirin  81 mg  PO  Daily
+
+
+NOTE: Changes from admission medications require clinician reconciliation.

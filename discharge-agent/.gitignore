@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# API keys — never commit these
+.env
+.env.*
+secrets.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large output files (keep structure, not content)
+# Comment these out if you want outputs committed
+# output/
+
+# Temp
+*.tmp
+*.log

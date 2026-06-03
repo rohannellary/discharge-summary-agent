@@ -1,0 +1,48 @@
+
+ADMISSION NOTE
+==============
+Patient Name: Robert Okafor
+MRN: MRN-334556
+Date of Birth: 11/28/1945
+Age: 78 years old
+Gender: Male
+
+Admission Date: 05/09/2024
+
+ADMITTING DIAGNOSIS: Acute Exacerbation of COPD
+
+ALLERGIES: NKDA
+
+CHIEF COMPLAINT:
+Patient presents with acute exacerbation of copd.
+
+HISTORY OF PRESENT ILLNESS:
+78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR — amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
+
+ADMISSION MEDICATIONS:
+- Warfarin 5 mg Daily
+- Digoxin 0.125 mg Daily
+- Metoprolol Succinate 50 mg Daily
+- Furosemide 40 mg Daily
+- Tiotropium 18 mcg Daily
+- Albuterol 2.5 mg Q4H PRN
+
+
+VITAL SIGNS ON ADMISSION:
+Blood Pressure: 138/88 mmHg
+Heart Rate: 96 bpm
+Temperature: 37.8 C
+Respiratory Rate: 18/min
+O2 Saturation: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert and oriented x3. Mildly distressed.
+Pertinent findings per admitting note.
+
+PLAN:
+- Chest X-ray (RLL infiltrate)
+- CT chest without contrast
+- Sputum collection for culture
+- Echocardiogram (EF 35%)
+
+Signed: Dr. [Admitting Physician]

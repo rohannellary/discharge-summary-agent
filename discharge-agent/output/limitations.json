@@ -1,0 +1,8 @@
+{
+  "cold_start": "With zero prior corrections, the memory is empty and provides no uplift. Mitigation: seed memory with manually authored gold-standard examples before first deployment.",
+  "gaming_the_reward": "An agent optimizing purely to minimize edit distance could learn to produce vague, hedge-everything output that requires no corrections but is clinically useless. Mitigation: reward is computed section-by-section with MISSING-field penalties; a summary that fills all fields with MISSING gets reward ~0.",
+  "style_vs_accuracy": "The reviewer's editing policy corrects style and formatting as well as clinical accuracy. A model that learns style improvements gets reward even if medicine is wrong. Mitigation: separate style-edit pairs from clinical-edit pairs; weight clinical edits 3x.",
+  "safety_preservation": "Learning must never reduce the Part 1 safety guarantees. Correction memory only influences prompt injection for non-safety fields (follow-up, condition). The no-fabrication guardrail is hard-coded in summary_builder.py, not in the learnable prompt.",
+  "simulated_vs_real": "Simulated reviewer has a fixed, known policy. Real clinicians vary, disagree, and make errors. A real deployment would need IRB approval, clinician training on annotation guidelines, and inter-rater reliability checks before using real edit signal.",
+  "sample_efficiency": "String-similarity retrieval degrades with small N. With <10 examples, most retrievals will be irrelevant. A production system would use embedding-based retrieval."
+}

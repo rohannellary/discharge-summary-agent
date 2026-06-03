@@ -1,0 +1,27 @@
+
+PROGRESS NOTE — Day 2
+======================
+Patient: Margaret Chen    MRN: MRN-884721
+Date: 05/13/2024
+
+SUBJECTIVE:
+Patient reports improved symptoms. Tolerating medications.
+
+OBJECTIVE:
+Vitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA
+
+ASSESSMENT AND PLAN:
+Discharge Diagnosis: Urinary Tract Infection
+
+#1. Hypertension
+#2. Chronic Kidney Disease Stage 3
+#3. Obesity
+
+Plan:
+- Continue current medications
+- Monitor labs
+- Urine culture (sent 05/16) — result pending
+- HbA1c — pending (sent to reference lab)
+
+
+Signed: Dr. [Covering Physician]

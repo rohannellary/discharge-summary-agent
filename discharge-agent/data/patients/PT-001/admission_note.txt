@@ -1,0 +1,46 @@
+
+ADMISSION NOTE
+==============
+Patient Name: Margaret Chen
+MRN: MRN-884721
+Date of Birth: 03/14/1958
+Age: 66 years old
+Gender: Female
+
+Admission Date: 05/12/2024
+
+ADMITTING DIAGNOSIS: Diabetic Ketoacidosis (DKA)
+
+ALLERGIES: Penicillin (hives)
+
+CHIEF COMPLAINT:
+Patient presents with diabetic ketoacidosis (dka).
+
+HISTORY OF PRESENT ILLNESS:
+66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.
+
+ADMISSION MEDICATIONS:
+- Metformin 1000 mg BID
+- Lisinopril 10 mg Daily
+- Atorvastatin 40 mg Nightly
+- Aspirin 81 mg Daily
+
+
+VITAL SIGNS ON ADMISSION:
+Blood Pressure: 138/88 mmHg
+Heart Rate: 96 bpm
+Temperature: 37.8 C
+Respiratory Rate: 18/min
+O2 Saturation: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert and oriented x3. Mildly distressed.
+Pertinent findings per admitting note.
+
+PLAN:
+- IV access x2
+- Continuous cardiac monitoring
+- Urinalysis
+- Chest X-ray (unremarkable)
+
+Signed: Dr. [Admitting Physician]

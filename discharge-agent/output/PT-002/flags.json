@@ -1,0 +1,333 @@
+{
+  "flags": [
+    {
+      "id": "FLAG-0001",
+      "type": "DIAGNOSIS_CONFLICT",
+      "severity": "HIGH",
+      "message": "1 data conflict(s): Inconsistent discharge date across documents",
+      "field": "principal_diagnosis",
+      "details": {
+        "conflicts": [
+          {
+            "type": "DATE_CONFLICT",
+            "severity": "MEDIUM",
+            "description": "Inconsistent discharge date across documents",
+            "field": "discharge_date",
+            "dates_found": [
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "admission_note p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/09/2024"
+              },
+              {
+                "source": "discharge_summary p1",
+                "date": "05/14/2024"
+              }
+            ],
+            "requires_clinician_review": true,
+            "flagged_field": "discharge_date"
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0002",
+      "type": "DRUG_INTERACTION",
+      "severity": "CRITICAL",
+      "message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.; MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+      "field": "medications",
+      "details": {
+        "interactions": [
+          {
+            "drug_a": "warfarin",
+            "drug_b": "amiodarone",
+            "severity": "MAJOR",
+            "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+          },
+          {
+            "drug_a": "amiodarone",
+            "drug_b": "digoxin",
+            "severity": "MAJOR",
+            "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+            "clinical_significance": "HIGH",
+            "requires_clinician_review": true,
+            "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+          }
+        ]
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0003",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Azithromycin",
+        "admission_dose": null,
+        "discharge_dose": "250 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    },
+    {
+      "id": "FLAG-0004",
+      "type": "UNDOCUMENTED_MED_CHANGE",
+      "severity": "HIGH",
+      "message": "New medication added with no documented reason",
+      "field": "medications",
+      "details": {
+        "type": "NEW",
+        "drug": "Prednisone",
+        "admission_dose": null,
+        "discharge_dose": "40 mg",
+        "reason_documented": null,
+        "flag_for_review": true,
+        "flag_reason": "New medication added with no documented reason"
+      },
+      "requires_clinician_review": true,
+      "auto_resolved": false,
+      "timestamp": "2026-06-03T09:30:18Z",
+      "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
+    }
+  ],
+  "conflicts": [
+    {
+      "type": "DATE_CONFLICT",
+      "severity": "MEDIUM",
+      "description": "Inconsistent discharge date across documents",
+      "field": "discharge_date",
+      "dates_found": [
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "admission_note p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/09/2024"
+        },
+        {
+          "source": "discharge_summary p1",
+          "date": "05/14/2024"
+        }
+      ],
+      "requires_clinician_review": true,
+      "flagged_field": "discharge_date"
+    }
+  ],
+  "pending_items": [
+    {
+      "test_or_result": "Sputum culture \u2014 pending (ordered 05/09)",
+      "status": "PENDING",
+      "source": "progress_note_day2 p1",
+      "requires_follow_up": true,
+      "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
+    },
+    {
+      "test_or_result": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+      "status": "PENDING",
+      "source": "progress_note_day2 p1",
+      "requires_follow_up": true,
+      "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
+    },
+    {
+      "test_or_result": "culture\n-",
+      "status": "PENDING",
+      "source": "admission_note p1",
+      "requires_follow_up": true,
+      "note": "Lab ordered but no result present in documents."
+    }
+  ],
+  "drug_interactions": [
+    {
+      "drug_a": "warfarin",
+      "drug_b": "amiodarone",
+      "severity": "MAJOR",
+      "description": "Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.",
+      "clinical_significance": "HIGH",
+      "requires_clinician_review": true,
+      "flag_message": "MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels."
+    },
+    {
+      "drug_a": "amiodarone",
+      "drug_b": "digoxin",
+      "severity": "MAJOR",
+      "description": "Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity.",
+      "clinical_significance": "HIGH",
+      "requires_clinician_review": true,
+      "flag_message": "MAJOR interaction between amiodarone and digoxin: Amiodarone increases digoxin levels by ~70%. Risk of digoxin toxicity."
+    }
+  ]
+}

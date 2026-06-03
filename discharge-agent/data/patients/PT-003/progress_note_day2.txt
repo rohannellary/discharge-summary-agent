@@ -1,0 +1,25 @@
+
+PROGRESS NOTE — Day 2
+======================
+Patient: Sofia Ramirez    MRN: MRN-671209
+Date: 05/16/2024
+
+SUBJECTIVE:
+Patient reports improved symptoms. Tolerating medications.
+
+OBJECTIVE:
+Vitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA
+
+ASSESSMENT AND PLAN:
+Discharge Diagnosis: Acute Gastroenteritis
+
+
+
+Plan:
+- Continue current medications
+- Monitor labs
+- CT abdomen/pelvis — ordered, result PENDING
+- Beta-hCG — ordered (rule out ectopic) — PENDING
+
+
+Signed: Dr. [Covering Physician]

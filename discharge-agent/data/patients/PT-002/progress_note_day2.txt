@@ -1,0 +1,27 @@
+
+PROGRESS NOTE — Day 2
+======================
+Patient: Robert Okafor    MRN: MRN-334556
+Date: 05/10/2024
+
+SUBJECTIVE:
+Patient reports improved symptoms. Tolerating medications.
+
+OBJECTIVE:
+Vitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA
+
+ASSESSMENT AND PLAN:
+Discharge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia
+
+#1. Atrial Fibrillation
+#2. Heart Failure with reduced EF (HFrEF)
+#3. Type 2 Diabetes
+
+Plan:
+- Continue current medications
+- Monitor labs
+- Sputum culture — pending (ordered 05/09)
+- INR (draw 05/15) — pending, warfarin dose adjustment required once available
+
+
+Signed: Dr. [Covering Physician]

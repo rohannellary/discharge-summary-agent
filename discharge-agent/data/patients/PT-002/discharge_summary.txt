@@ -1,0 +1,56 @@
+
+DISCHARGE SUMMARY
+=================
+Patient Name: Robert Okafor
+MRN: MRN-334556
+Date of Birth: 11/28/1945
+Admission Date: 05/09/2024
+Discharge Date: 05/14/2024
+
+PRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia
+
+SECONDARY DIAGNOSES:
+- Atrial Fibrillation
+- Heart Failure with reduced EF (HFrEF)
+- Type 2 Diabetes
+
+
+DISCHARGE CONDITION: Improved
+
+ALLERGIES: NKDA
+
+HOSPITAL COURSE:
+78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR — amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
+
+PROCEDURES PERFORMED:
+- Chest X-ray (RLL infiltrate)
+- CT chest without contrast
+- Sputum collection for culture
+- Echocardiogram (EF 35%)
+
+
+DISCHARGE MEDICATIONS:
+- Warfarin 5 mg PO Daily
+- Amiodarone 200 mg PO Daily
+- Digoxin 0.125 mg PO Daily
+- Metoprolol Succinate 50 mg PO Daily
+- Furosemide 40 mg PO Daily
+- Tiotropium 18 mcg Inhaled Daily
+- Albuterol 2.5 mg Neb Q4H PRN
+- Azithromycin 250 mg PO Daily x5 days
+- Prednisone 40 mg PO Daily x5 days
+
+
+PENDING RESULTS AT DISCHARGE:
+- Sputum culture — pending (ordered 05/09) (PENDING)
+- INR (draw 05/15) — pending, warfarin dose adjustment required once available (PENDING)
+
+
+FOLLOW-UP INSTRUCTIONS:
+- Pulmonology follow-up in 2 weeks
+- Cardiology follow-up in 1 week — INR check and amiodarone monitoring
+- Repeat CXR in 4 weeks
+- Resume Warfarin per home dose; INR to be checked by PCP within 3 days
+
+
+Signed: Dr. [Discharging Physician]

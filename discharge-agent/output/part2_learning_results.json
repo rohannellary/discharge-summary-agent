@@ -1,0 +1,317 @@
+{
+  "rounds": [
+    {
+      "round_number": 1,
+      "patient_id": "PT-001",
+      "draft_reward": 0.6265,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      },
+      "num_edits": 5,
+      "corrections_injected": 5,
+      "timestamp": 1780479018.1763718
+    },
+    {
+      "round_number": 2,
+      "patient_id": "PT-002",
+      "draft_reward": 0.7783,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      },
+      "num_edits": 4,
+      "corrections_injected": 9,
+      "timestamp": 1780479018.1808114
+    },
+    {
+      "round_number": 3,
+      "patient_id": "PT-001",
+      "draft_reward": 0.6265,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      },
+      "num_edits": 5,
+      "corrections_injected": 14,
+      "timestamp": 1780479018.1869268
+    },
+    {
+      "round_number": 4,
+      "patient_id": "PT-002",
+      "draft_reward": 0.7783,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      },
+      "num_edits": 4,
+      "corrections_injected": 18,
+      "timestamp": 1780479018.1911778
+    },
+    {
+      "round_number": 5,
+      "patient_id": "PT-001",
+      "draft_reward": 0.6265,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      },
+      "num_edits": 5,
+      "corrections_injected": 23,
+      "timestamp": 1780479018.196818
+    },
+    {
+      "round_number": 6,
+      "patient_id": "PT-002",
+      "draft_reward": 0.7783,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      },
+      "num_edits": 4,
+      "corrections_injected": 27,
+      "timestamp": 1780479018.202959
+    },
+    {
+      "round_number": 7,
+      "patient_id": "PT-003_holdout",
+      "draft_reward": 0.7654,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.2593,
+        "follow_up_instructions": 0.5676,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      },
+      "num_edits": 4,
+      "corrections_injected": 31,
+      "timestamp": 1780479018.2086725
+    }
+  ],
+  "metrics_history": [
+    {
+      "round": 1,
+      "aggregate_reward": 0.6265,
+      "edit_burden": 0.3735,
+      "num_edits": 5,
+      "memory_size": 5,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 2,
+      "aggregate_reward": 0.7783,
+      "edit_burden": 0.2217,
+      "num_edits": 4,
+      "memory_size": 9,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 3,
+      "aggregate_reward": 0.6265,
+      "edit_burden": 0.3735,
+      "num_edits": 5,
+      "memory_size": 14,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 4,
+      "aggregate_reward": 0.7783,
+      "edit_burden": 0.2217,
+      "num_edits": 4,
+      "memory_size": 18,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 5,
+      "aggregate_reward": 0.6265,
+      "edit_burden": 0.3735,
+      "num_edits": 5,
+      "memory_size": 23,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1538,
+        "follow_up_instructions": 0.6214,
+        "diagnoses.principal_diagnosis": 0.3575,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 6,
+      "aggregate_reward": 0.7783,
+      "edit_burden": 0.2217,
+      "num_edits": 4,
+      "memory_size": 27,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.1839,
+        "follow_up_instructions": 0.7076,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      }
+    },
+    {
+      "round": 7,
+      "aggregate_reward": 0.7654,
+      "edit_burden": 0.2346,
+      "num_edits": 4,
+      "memory_size": 31,
+      "section_scores": {
+        "hospital_course": 1.0,
+        "discharge_condition": 0.2593,
+        "follow_up_instructions": 0.5676,
+        "diagnoses.principal_diagnosis": 1.0,
+        "allergies": 1.0
+      }
+    }
+  ],
+  "improvement_curve": {
+    "rounds": [
+      {
+        "round": 1,
+        "aggregate_reward": 0.6265,
+        "edit_burden": 0.3735,
+        "num_edits": 5,
+        "memory_size": 5,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1538,
+          "follow_up_instructions": 0.6214,
+          "diagnoses.principal_diagnosis": 0.3575,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 2,
+        "aggregate_reward": 0.7783,
+        "edit_burden": 0.2217,
+        "num_edits": 4,
+        "memory_size": 9,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1839,
+          "follow_up_instructions": 0.7076,
+          "diagnoses.principal_diagnosis": 1.0,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 3,
+        "aggregate_reward": 0.6265,
+        "edit_burden": 0.3735,
+        "num_edits": 5,
+        "memory_size": 14,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1538,
+          "follow_up_instructions": 0.6214,
+          "diagnoses.principal_diagnosis": 0.3575,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 4,
+        "aggregate_reward": 0.7783,
+        "edit_burden": 0.2217,
+        "num_edits": 4,
+        "memory_size": 18,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1839,
+          "follow_up_instructions": 0.7076,
+          "diagnoses.principal_diagnosis": 1.0,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 5,
+        "aggregate_reward": 0.6265,
+        "edit_burden": 0.3735,
+        "num_edits": 5,
+        "memory_size": 23,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1538,
+          "follow_up_instructions": 0.6214,
+          "diagnoses.principal_diagnosis": 0.3575,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 6,
+        "aggregate_reward": 0.7783,
+        "edit_burden": 0.2217,
+        "num_edits": 4,
+        "memory_size": 27,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.1839,
+          "follow_up_instructions": 0.7076,
+          "diagnoses.principal_diagnosis": 1.0,
+          "allergies": 1.0
+        }
+      },
+      {
+        "round": 7,
+        "aggregate_reward": 0.7654,
+        "edit_burden": 0.2346,
+        "num_edits": 4,
+        "memory_size": 31,
+        "section_scores": {
+          "hospital_course": 1.0,
+          "discharge_condition": 0.2593,
+          "follow_up_instructions": 0.5676,
+          "diagnoses.principal_diagnosis": 1.0,
+          "allergies": 1.0
+        }
+      }
+    ],
+    "improvement_in_reward": 0.0463,
+    "edit_burden_reduction": 0.0463,
+    "trend": "improving",
+    "first_round_reward": 0.6265,
+    "latest_round_reward": 0.7654,
+    "memory_entries": 31
+  }
+}

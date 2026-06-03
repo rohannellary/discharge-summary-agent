@@ -1,0 +1,44 @@
+
+DISCHARGE SUMMARY
+=================
+Patient Name: Sofia Ramirez
+MRN: MRN-671209
+Date of Birth: 07/04/1989
+Admission Date: 05/15/2024
+Discharge Date: 05/16/2024
+
+PRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis — see surgical note
+
+SECONDARY DIAGNOSES:
+- None documented
+
+DISCHARGE CONDITION: 
+
+ALLERGIES: 
+
+HOSPITAL COURSE:
+34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained — equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.
+
+PROCEDURES PERFORMED:
+- IV access
+- IV fluids 1L NS
+- CT abdomen/pelvis (pending result)
+- Surgical consultation
+
+
+DISCHARGE MEDICATIONS:
+- Ondansetron 4 mg PO Q8H PRN nausea
+- Ibuprofen 400 mg PO Q6H PRN pain
+
+
+PENDING RESULTS AT DISCHARGE:
+- CT abdomen/pelvis — ordered, result PENDING (PENDING)
+- Beta-hCG — ordered (rule out ectopic) — PENDING (PENDING)
+
+
+FOLLOW-UP INSTRUCTIONS:
+- Return to ED if pain worsens, fever, or unable to tolerate PO
+- Follow up with PCP in 48–72 hours
+
+
+Signed: Dr. [Discharging Physician]

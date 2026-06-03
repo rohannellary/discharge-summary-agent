@@ -1,0 +1,42 @@
+
+ADMISSION NOTE
+==============
+Patient Name: Sofia Ramirez
+MRN: MRN-671209
+Date of Birth: 07/04/1989
+Age: 34 years old
+Gender: Female
+
+Admission Date: 05/15/2024
+
+ADMITTING DIAGNOSIS: Acute Gastroenteritis
+
+ALLERGIES: 
+
+CHIEF COMPLAINT:
+Patient presents with acute gastroenteritis.
+
+HISTORY OF PRESENT ILLNESS:
+34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained — equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.
+
+ADMISSION MEDICATIONS:
+None on file
+
+VITAL SIGNS ON ADMISSION:
+Blood Pressure: 138/88 mmHg
+Heart Rate: 96 bpm
+Temperature: 37.8 C
+Respiratory Rate: 18/min
+O2 Saturation: 97% on room air
+
+PHYSICAL EXAMINATION:
+General: Alert and oriented x3. Mildly distressed.
+Pertinent findings per admitting note.
+
+PLAN:
+- IV access
+- IV fluids 1L NS
+- CT abdomen/pelvis (pending result)
+- Surgical consultation
+
+Signed: Dr. [Admitting Physician]
