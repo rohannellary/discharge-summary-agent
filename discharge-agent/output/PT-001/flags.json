@@ -104,7 +104,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:17Z",
+      "timestamp": "2026-06-03T09:59:24Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -124,7 +124,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -144,7 +144,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -164,7 +164,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],
@@ -366,14 +366,14 @@
   ],
   "pending_items": [
     {
-      "test_or_result": "Urine culture (sent 05/16) \u2014 result pending",
+      "test_or_result": "Urine culture (sent 05/16) \ufffd result pending",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,
       "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
     },
     {
-      "test_or_result": "HbA1c \u2014 pending (sent to reference lab)",
+      "test_or_result": "HbA1c \ufffd pending (sent to reference lab)",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,

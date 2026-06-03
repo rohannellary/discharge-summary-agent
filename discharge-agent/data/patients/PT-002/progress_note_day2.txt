@@ -1,5 +1,5 @@
 
-PROGRESS NOTE â€” Day 2
+PROGRESS NOTE — Day 2
 ======================
 Patient: Robert Okafor    MRN: MRN-334556
 Date: 05/10/2024
@@ -20,8 +20,8 @@ Discharge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia
 Plan:
 - Continue current medications
 - Monitor labs
-- Sputum culture â€” pending (ordered 05/09)
-- INR (draw 05/15) â€” pending, warfarin dose adjustment required once available
+- Sputum culture — pending (ordered 05/09)
+- INR (draw 05/15) — pending, warfarin dose adjustment required once available
 
 
 Signed: Dr. [Covering Physician]

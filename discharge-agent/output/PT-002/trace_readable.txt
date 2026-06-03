@@ -11,7 +11,7 @@ AGENT TRACE — Patient PT-002
   Reasoning: Check for cross-document contradictions
   Result: {'conflicts': [{'type': 'DATE_CONFLICT', 'severity': 'MEDIUM', 'description': 'Inconsistent discharge date across documents', 'field': 'discharge_date', 'dates_found': [{'source': 'admission_note p1',
   Next: Tool succeeded — updating state and re-planning
-  Duration: 21ms
+  Duration: 16ms
 
 [Step 3] Action: escalate
   Reasoning: Found 1 conflict(s) — escalating all as single flag
@@ -23,13 +23,13 @@ AGENT TRACE — Patient PT-002
   Reasoning: Compare admission vs discharge medications
   Result: {'admission_medication_count': 6, 'discharge_medication_count': 9, 'changes': [{'type': 'CONTINUED', 'drug': 'Warfarin', 'admission_dose': '5 mg', 'discharge_dose': '5 mg', 'reason_documented': None, 
   Next: Tool succeeded — updating state and re-planning
-  Duration: 9ms
+  Duration: 7ms
 
 [Step 5] Action: check_drug_interactions
   Reasoning: Check discharge medications for interactions
   Result: {'interactions': [{'drug_a': 'warfarin', 'drug_b': 'amiodarone', 'severity': 'MAJOR', 'description': 'Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.', 'clinical_signi
   Next: Tool succeeded — updating state and re-planning
-  Duration: 0ms
+  Duration: 1ms
 
 [Step 6] Action: escalate
   Reasoning: Found 2 MAJOR drug interaction(s) — escalating as CRITICAL flag
@@ -39,9 +39,9 @@ AGENT TRACE — Patient PT-002
 
 [Step 7] Action: check_pending
   Reasoning: Find all pending/outstanding results
-  Result: {'pending': [{'test_or_result': 'Sputum culture — pending (ordered 05/09)', 'status': 'PENDING', 'source': 'progress_note_day2 p1', 'requires_follow_up': True, 'note': 'Result pending — must NOT be as
+  Result: {'pending': [{'test_or_result': 'Sputum culture � pending (ordered 05/09)', 'status': 'PENDING', 'source': 'progress_note_day2 p1', 'requires_follow_up': True, 'note': 'Result pending — must NOT be as
   Next: Tool succeeded — updating state and re-planning
-  Duration: 39ms
+  Duration: 26ms
 
 [Step 8] Action: escalate
   Reasoning: Undocumented med change #1: Azithromycin — escalating
@@ -57,9 +57,9 @@ AGENT TRACE — Patient PT-002
 
 [Step 10] Action: build_summary
   Reasoning: All checks complete — assembling final discharge summary draft
-  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-03T09:30:18Z', 'patient_id': 'PT-002', 'warning': 'THIS IS AN AI-GE
+  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-03T09:59:25Z', 'patient_id': 'PT-002', 'warning': 'THIS IS AN AI-GE
   Next: Tool succeeded — updating state and re-planning
-  Duration: 5ms
+  Duration: 4ms
 
 [Step 11] Action: DONE
   Reasoning: Summary built — all flags raised — done

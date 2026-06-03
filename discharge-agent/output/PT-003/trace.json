@@ -5,11 +5,11 @@
     "action": "ingest_pdfs",
     "inputs": {
       "pdf_paths": [
-        "/home/claude/discharge-agent/data/patients/PT-003/admission_note.txt",
-        "/home/claude/discharge-agent/data/patients/PT-003/progress_note_day2.txt",
-        "/home/claude/discharge-agent/data/patients/PT-003/discharge_summary.txt",
-        "/home/claude/discharge-agent/data/patients/PT-003/lab_results.txt",
-        "/home/claude/discharge-agent/data/patients/PT-003/medication_record.txt"
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\admission_note.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\progress_note_day2.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\discharge_summary.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\lab_results.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\medication_record.txt"
       ]
     },
     "result": {
@@ -18,25 +18,25 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
             "source": "lab_results",
             "page": 1,
-            "text": "LABORATORY RESULTS\n==================\nPatient: Sofia Ramirez    MRN: MRN-671209\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nCT abdomen/pelvis \u2014 ordered, result PENDING\nBeta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nReport generated by: Laboratory Information System",
+            "text": "LABORATORY RESULTS\n==================\nPatient: Sofia Ramirez    MRN: MRN-671209\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nCT abdomen/pelvis \ufffd ordered, result PENDING\nBeta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nReport generated by: Laboratory Information System",
             "method": "plaintext"
           },
           {
@@ -50,13 +50,13 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -64,25 +64,25 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
             "source": "lab_results",
             "page": 1,
-            "text": "LABORATORY RESULTS\n==================\nPatient: Sofia Ramirez    MRN: MRN-671209\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nCT abdomen/pelvis \u2014 ordered, result PENDING\nBeta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nReport generated by: Laboratory Information System",
+            "text": "LABORATORY RESULTS\n==================\nPatient: Sofia Ramirez    MRN: MRN-671209\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nCT abdomen/pelvis \ufffd ordered, result PENDING\nBeta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nReport generated by: Laboratory Information System",
             "method": "plaintext"
           }
         ],
@@ -90,19 +90,19 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
@@ -116,13 +116,13 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -130,19 +130,19 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -150,13 +150,13 @@
           {
             "source": "admission_note",
             "page": 1,
-            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
+            "text": "ADMISSION NOTE\n==============\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAge: 34 years old\nGender: Female\n\nAdmission Date: 05/15/2024\n\nADMITTING DIAGNOSIS: Acute Gastroenteritis\n\nALLERGIES: \n\nCHIEF COMPLAINT:\nPatient presents with acute gastroenteritis.\n\nHISTORY OF PRESENT ILLNESS:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nADMISSION MEDICATIONS:\nNone on file\n\nVITAL SIGNS ON ADMISSION:\nBlood Pressure: 138/88 mmHg\nHeart Rate: 96 bpm\nTemperature: 37.8 C\nRespiratory Rate: 18/min\nO2 Saturation: 97% on room air\n\nPHYSICAL EXAMINATION:\nGeneral: Alert and oriented x3. Mildly distressed.\nPertinent findings per admitting note.\n\nPLAN:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\nSigned: Dr. [Admitting Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -164,7 +164,7 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           }
         ],
@@ -172,13 +172,13 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -186,7 +186,7 @@
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \u2014 ordered, result PENDING (PENDING)\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\u201372 hours\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.\n\nPROCEDURES PERFORMED:\n- IV access\n- IV fluids 1L NS\n- CT abdomen/pelvis (pending result)\n- Surgical consultation\n\n\nDISCHARGE MEDICATIONS:\n- Ondansetron 4 mg PO Q8H PRN nausea\n- Ibuprofen 400 mg PO Q6H PRN pain\n\n\nPENDING RESULTS AT DISCHARGE:\n- CT abdomen/pelvis \ufffd ordered, result PENDING (PENDING)\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Return to ED if pain worsens, fever, or unable to tolerate PO\n- Follow up with PCP in 48\ufffd72 hours\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ]
@@ -271,7 +271,7 @@
           "discharge_date": "05/16/2024"
         },
         "diagnoses": {
-          "principal": "Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note",
+          "principal": "Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note",
           "secondary": [
             "None documented"
           ],
@@ -293,7 +293,7 @@
         "allergies": [],
         "pending_labs": [
           {
-            "test": "34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.",
+            "test": "34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.",
             "status": "PENDING",
             "requires_follow_up": true,
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
@@ -305,13 +305,13 @@
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
           },
           {
-            "test": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+            "test": "CT abdomen/pelvis \ufffd ordered, result PENDING",
             "status": "PENDING",
             "requires_follow_up": true,
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
           },
           {
-            "test": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+            "test": "Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING",
             "status": "PENDING",
             "requires_follow_up": true,
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
@@ -332,18 +332,18 @@
         "follow_up_instructions": [
           "INSTRUCTIONS:",
           "- Return to ED if pain worsens, fever, or unable to tolerate PO",
-          "- Follow up with PCP in 48\u201372 hours"
+          "- Follow up with PCP in 48\ufffd72 hours"
         ],
         "hospital_course_raw": [
-          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
-          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician]",
-          "[discharge_summary p1]: DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \u2014 equivocal exam. CT abdomen/pelvis ord"
+          "[progress_note_day2 p1]: PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
+          "[progress_note_day2 p1]: PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician]",
+          "[discharge_summary p1]: DISCHARGE SUMMARY\n=================\nPatient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None documented\n\nDISCHARGE CONDITION: \n\nALLERGIES: \n\nHOSPITAL COURSE:\n34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained \ufffd equivocal exam. CT abdomen/pelvis ord"
         ]
       }
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.108129,
-    "duration_ms": 4.842519760131836,
+    "timestamp": 1780480765.1118338,
+    "duration_ms": 4.554510116577148,
     "error": null
   },
   {
@@ -466,8 +466,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1240964,
-    "duration_ms": 15.873908996582031,
+    "timestamp": 1780480765.1243594,
+    "duration_ms": 12.525558471679688,
     "error": null
   },
   {
@@ -716,12 +716,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1241913,
-    "duration_ms": 0.05459785461425781,
+    "timestamp": 1780480765.1243594,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -776,8 +776,8 @@
       "note": "Medication reconciliation performed. All flagged changes require clinician review before finalization."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1304836,
-    "duration_ms": 6.240129470825195,
+    "timestamp": 1780480765.1297317,
+    "duration_ms": 5.372285842895508,
     "error": null
   },
   {
@@ -798,8 +798,8 @@
       "note": "Checked 1 drug pairs. Found 0 interactions (0 major, 0 moderate)."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1305506,
-    "duration_ms": 0.04839897155761719,
+    "timestamp": 1780480765.1297317,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -824,14 +824,14 @@
           "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
         },
         {
-          "test_or_result": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+          "test_or_result": "CT abdomen/pelvis \ufffd ordered, result PENDING",
           "status": "PENDING",
           "source": "progress_note_day2 p1",
           "requires_follow_up": true,
           "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
         },
         {
-          "test_or_result": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+          "test_or_result": "Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING",
           "status": "PENDING",
           "source": "progress_note_day2 p1",
           "requires_follow_up": true,
@@ -842,8 +842,8 @@
       "note": "Found 4 pending items. These must appear in the discharge summary as PENDING \u2014 never filled with assumed values."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1605535,
-    "duration_ms": 29.929399490356445,
+    "timestamp": 1780480765.1509755,
+    "duration_ms": 21.243810653686523,
     "error": null
   },
   {
@@ -882,12 +882,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.160676,
-    "duration_ms": 0.0934600830078125,
+    "timestamp": 1780480765.1520047,
+    "duration_ms": 1.0292530059814453,
     "error": null
   },
   {
@@ -926,12 +926,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.1607442,
-    "duration_ms": 0.03337860107421875,
+    "timestamp": 1780480765.1520047,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -943,7 +943,7 @@
       "_meta": {
         "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
         "auto_finalized": false,
-        "generated_at": "2026-06-03T09:30:18Z",
+        "generated_at": "2026-06-03T09:59:25Z",
         "patient_id": "PT-003",
         "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
         "total_flags": 4,
@@ -961,12 +961,12 @@
         "discharge_date": "05/16/2024"
       },
       "diagnoses": {
-        "principal_diagnosis": "Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note",
+        "principal_diagnosis": "Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note",
         "secondary_diagnoses": [
           "None documented"
         ]
       },
-      "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | Patient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None document",
+      "hospital_course": "PROGRESS NOTE \ufffd Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician] | PROGRESS NOTE \ufffd Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician] | Patient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None document",
       "procedures": [
         "IV access",
         "IV fluids 1L NS",
@@ -1005,12 +1005,12 @@
           "note": "Result not available at time of discharge \u2014 follow-up required"
         },
         {
-          "test": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+          "test": "CT abdomen/pelvis \ufffd ordered, result PENDING",
           "status": "PENDING",
           "note": "Result not available at time of discharge \u2014 follow-up required"
         },
         {
-          "test": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+          "test": "Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING",
           "status": "PENDING",
           "note": "Result not available at time of discharge \u2014 follow-up required"
         }
@@ -1018,7 +1018,7 @@
       "follow_up_instructions": [
         "INSTRUCTIONS:",
         "- Return to ED if pain worsens, fever, or unable to tolerate PO",
-        "- Follow up with PCP in 48\u201372 hours"
+        "- Follow up with PCP in 48\ufffd72 hours"
       ],
       "discharge_condition": "[MISSING \u2014 REQUIRES CLINICIAN INPUT]",
       "drug_interactions_flagged": [],
@@ -1145,7 +1145,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1165,7 +1165,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1185,7 +1185,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1312,8 +1312,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.164843,
-    "duration_ms": 3.9260387420654297,
+    "timestamp": 1780480765.1545444,
+    "duration_ms": 2.5396347045898438,
     "error": null
   },
   {
@@ -1323,7 +1323,7 @@
     "inputs": {},
     "result": "Agent decided work is complete",
     "next_decision": "Finalizing output",
-    "timestamp": 1780479018.1648788,
+    "timestamp": 1780480765.1545444,
     "duration_ms": 0.0,
     "error": null
   }

@@ -17,7 +17,7 @@ CHIEF COMPLAINT:
 Patient presents with acute exacerbation of copd.
 
 HISTORY OF PRESENT ILLNESS:
-78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR â€” amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
+78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR — amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
 
 ADMISSION MEDICATIONS:
 - Warfarin 5 mg Daily

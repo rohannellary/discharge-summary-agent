@@ -37,13 +37,13 @@ DISCHARGE MEDICATIONS:
 
 
 PENDING RESULTS AT DISCHARGE:
-- Urine culture (sent 05/16) â€” result pending (PENDING)
-- HbA1c â€” pending (sent to reference lab) (PENDING)
+- Urine culture (sent 05/16) — result pending (PENDING)
+- HbA1c — pending (sent to reference lab) (PENDING)
 
 
 FOLLOW-UP INSTRUCTIONS:
 - Follow up with primary care physician in 1 week
-- Endocrinology referral â€” appointment to be scheduled
+- Endocrinology referral — appointment to be scheduled
 - Recheck BMP in 1 week
 
 

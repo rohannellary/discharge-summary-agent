@@ -20,7 +20,7 @@ DISCHARGE CONDITION: Improved
 ALLERGIES: NKDA
 
 HOSPITAL COURSE:
-78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR â€” amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
+78M with COPD presenting with 3 days worsening dyspnea and productive cough. CXR showed RLL infiltrate consistent with CAP. Started on IV steroids, bronchodilators, and azithromycin. Cardiology consulted for new AF with RVR — amiodarone started for rate control. INR supratherapeutic at 3.8 on admission; warfarin held x2 days then restarted. Improved clinically; O2 requirement decreased.
 
 PROCEDURES PERFORMED:
 - Chest X-ray (RLL infiltrate)
@@ -42,13 +42,13 @@ DISCHARGE MEDICATIONS:
 
 
 PENDING RESULTS AT DISCHARGE:
-- Sputum culture â€” pending (ordered 05/09) (PENDING)
-- INR (draw 05/15) â€” pending, warfarin dose adjustment required once available (PENDING)
+- Sputum culture — pending (ordered 05/09) (PENDING)
+- INR (draw 05/15) — pending, warfarin dose adjustment required once available (PENDING)
 
 
 FOLLOW-UP INSTRUCTIONS:
 - Pulmonology follow-up in 2 weeks
-- Cardiology follow-up in 1 week â€” INR check and amiodarone monitoring
+- Cardiology follow-up in 1 week — INR check and amiodarone monitoring
 - Repeat CXR in 4 weeks
 - Resume Warfarin per home dose; INR to be checked by PCP within 3 days
 

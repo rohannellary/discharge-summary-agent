@@ -7,7 +7,7 @@ Date of Birth: 07/04/1989
 Admission Date: 05/15/2024
 Discharge Date: 05/16/2024
 
-PRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis â€” see surgical note
+PRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis — see surgical note
 
 SECONDARY DIAGNOSES:
 - None documented
@@ -17,7 +17,7 @@ DISCHARGE CONDITION:
 ALLERGIES: 
 
 HOSPITAL COURSE:
-34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained â€” equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.
+34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained — equivocal exam. CT abdomen/pelvis ordered but result pending at time of discharge. Tolerated PO challenge. Patient elected to leave.
 
 PROCEDURES PERFORMED:
 - IV access
@@ -32,13 +32,13 @@ DISCHARGE MEDICATIONS:
 
 
 PENDING RESULTS AT DISCHARGE:
-- CT abdomen/pelvis â€” ordered, result PENDING (PENDING)
-- Beta-hCG â€” ordered (rule out ectopic) â€” PENDING (PENDING)
+- CT abdomen/pelvis — ordered, result PENDING (PENDING)
+- Beta-hCG — ordered (rule out ectopic) — PENDING (PENDING)
 
 
 FOLLOW-UP INSTRUCTIONS:
 - Return to ED if pain worsens, fever, or unable to tolerate PO
-- Follow up with PCP in 48â€“72 hours
+- Follow up with PCP in 48–72 hours
 
 
 Signed: Dr. [Discharging Physician]

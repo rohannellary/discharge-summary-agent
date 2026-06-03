@@ -1,5 +1,5 @@
 
-PROGRESS NOTE â€” Day 2
+PROGRESS NOTE — Day 2
 ======================
 Patient: Margaret Chen    MRN: MRN-884721
 Date: 05/13/2024
@@ -20,8 +20,8 @@ Discharge Diagnosis: Urinary Tract Infection
 Plan:
 - Continue current medications
 - Monitor labs
-- Urine culture (sent 05/16) â€” result pending
-- HbA1c â€” pending (sent to reference lab)
+- Urine culture (sent 05/16) — result pending
+- HbA1c — pending (sent to reference lab)
 
 
 Signed: Dr. [Covering Physician]

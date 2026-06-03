@@ -110,7 +110,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -143,7 +143,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -163,7 +163,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -183,7 +183,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],
@@ -289,14 +289,14 @@
   ],
   "pending_items": [
     {
-      "test_or_result": "Sputum culture \u2014 pending (ordered 05/09)",
+      "test_or_result": "Sputum culture \ufffd pending (ordered 05/09)",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,
       "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
     },
     {
-      "test_or_result": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+      "test_or_result": "INR (draw 05/15) \ufffd pending, warfarin dose adjustment required once available",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,

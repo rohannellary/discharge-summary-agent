@@ -2,7 +2,7 @@
   "_meta": {
     "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
     "auto_finalized": false,
-    "generated_at": "2026-06-03T09:30:18Z",
+    "generated_at": "2026-06-03T09:59:25Z",
     "patient_id": "PT-001",
     "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
     "total_flags": 4,
@@ -27,7 +27,7 @@
       "Obesity"
     ]
   },
-  "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent | Patient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m | PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infec",
+  "hospital_course": "PROGRESS NOTE \ufffd Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent | Patient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m | PROGRESS NOTE \ufffd Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infec",
   "procedures": [
     "(unremarkable)",
     "IV access x2",
@@ -76,12 +76,12 @@
   },
   "pending_results": [
     {
-      "test": "Urine culture (sent 05/16) \u2014 result pending",
+      "test": "Urine culture (sent 05/16) \ufffd result pending",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     },
     {
-      "test": "HbA1c \u2014 pending (sent to reference lab)",
+      "test": "HbA1c \ufffd pending (sent to reference lab)",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     }
@@ -89,7 +89,7 @@
   "follow_up_instructions": [
     "INSTRUCTIONS:",
     "- Follow up with primary care physician in 1 week",
-    "- Endocrinology referral \u2014 appointment to be scheduled",
+    "- Endocrinology referral \ufffd appointment to be scheduled",
     "- Recheck BMP in 1 week"
   ],
   "discharge_condition": "Stable",
@@ -199,7 +199,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:17Z",
+      "timestamp": "2026-06-03T09:59:24Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -219,7 +219,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -239,7 +239,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -259,7 +259,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],

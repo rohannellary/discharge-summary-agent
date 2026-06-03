@@ -4,11 +4,11 @@
     "name": "Margaret Chen",
     "scenario_notes": "DKA patient with diagnosis conflict (admission says DKA, progress note says UTI), Metformin stopped without reason, Lisinopril dose doubled without reason, pending urine culture and HbA1c.",
     "files": [
-      "/home/claude/discharge-agent/data/patients/PT-001/admission_note.txt",
-      "/home/claude/discharge-agent/data/patients/PT-001/progress_note_day2.txt",
-      "/home/claude/discharge-agent/data/patients/PT-001/discharge_summary.txt",
-      "/home/claude/discharge-agent/data/patients/PT-001/lab_results.txt",
-      "/home/claude/discharge-agent/data/patients/PT-001/medication_record.txt"
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\admission_note.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\progress_note_day2.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\discharge_summary.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\lab_results.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\medication_record.txt"
     ]
   },
   "PT-002": {
@@ -16,11 +16,11 @@
     "name": "Robert Okafor",
     "scenario_notes": "COPD/CAP patient. Major drug interactions: Amiodarone + Warfarin (MAJOR), Amiodarone + Digoxin (MAJOR). Pending sputum culture and INR.",
     "files": [
-      "/home/claude/discharge-agent/data/patients/PT-002/admission_note.txt",
-      "/home/claude/discharge-agent/data/patients/PT-002/progress_note_day2.txt",
-      "/home/claude/discharge-agent/data/patients/PT-002/discharge_summary.txt",
-      "/home/claude/discharge-agent/data/patients/PT-002/lab_results.txt",
-      "/home/claude/discharge-agent/data/patients/PT-002/medication_record.txt"
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-002\\admission_note.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-002\\progress_note_day2.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-002\\discharge_summary.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-002\\lab_results.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-002\\medication_record.txt"
     ]
   },
   "PT-003": {
@@ -28,11 +28,11 @@
     "name": "Sofia Ramirez",
     "scenario_notes": "Short stay, many missing fields (allergies, discharge condition, admission meds). Conflicting diagnosis (gastroenteritis vs. appendicitis). Critical pending results: CT abdomen and beta-hCG.",
     "files": [
-      "/home/claude/discharge-agent/data/patients/PT-003/admission_note.txt",
-      "/home/claude/discharge-agent/data/patients/PT-003/progress_note_day2.txt",
-      "/home/claude/discharge-agent/data/patients/PT-003/discharge_summary.txt",
-      "/home/claude/discharge-agent/data/patients/PT-003/lab_results.txt",
-      "/home/claude/discharge-agent/data/patients/PT-003/medication_record.txt"
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\admission_note.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\progress_note_day2.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\discharge_summary.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\lab_results.txt",
+      "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-003\\medication_record.txt"
     ]
   }
 }

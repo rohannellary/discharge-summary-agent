@@ -2,7 +2,7 @@
   "_meta": {
     "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
     "auto_finalized": false,
-    "generated_at": "2026-06-03T09:30:18Z",
+    "generated_at": "2026-06-03T09:59:25Z",
     "patient_id": "PT-003",
     "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
     "total_flags": 4,
@@ -20,12 +20,12 @@
     "discharge_date": "05/16/2024"
   },
   "diagnoses": {
-    "principal_diagnosis": "Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note",
+    "principal_diagnosis": "Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note",
     "secondary_diagnoses": [
       "None documented"
     ]
   },
-  "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | PROGRESS NOTE \u2014 Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \u2014 ordered, result PENDING\n- Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING\n\n\nSigned: Dr. [Covering Physician] | Patient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \u2014 see surgical note\n\nSECONDARY DIAGNOSES:\n- None document",
+  "hospital_course": "PROGRESS NOTE \ufffd Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician] | PROGRESS NOTE \ufffd Day 2\nPatient: Sofia Ramirez    MRN: MRN-671209\nDate: 05/16/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Gastroenteritis\n\n\n\nPlan:\n- Continue current medications\n- Monitor labs\n- CT abdomen/pelvis \ufffd ordered, result PENDING\n- Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING\n\n\nSigned: Dr. [Covering Physician] | Patient Name: Sofia Ramirez\nMRN: MRN-671209\nDate of Birth: 07/04/1989\nAdmission Date: 05/15/2024\nDischarge Date: 05/16/2024\n\nPRINCIPAL DIAGNOSIS: Acute Gastroenteritis vs. Early Appendicitis \ufffd see surgical note\n\nSECONDARY DIAGNOSES:\n- None document",
   "procedures": [
     "IV access",
     "IV fluids 1L NS",
@@ -64,12 +64,12 @@
       "note": "Result not available at time of discharge \u2014 follow-up required"
     },
     {
-      "test": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+      "test": "CT abdomen/pelvis \ufffd ordered, result PENDING",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     },
     {
-      "test": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+      "test": "Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     }
@@ -77,7 +77,7 @@
   "follow_up_instructions": [
     "INSTRUCTIONS:",
     "- Return to ED if pain worsens, fever, or unable to tolerate PO",
-    "- Follow up with PCP in 48\u201372 hours"
+    "- Follow up with PCP in 48\ufffd72 hours"
   ],
   "discharge_condition": "[MISSING \u2014 REQUIRES CLINICIAN INPUT]",
   "drug_interactions_flagged": [],
@@ -204,7 +204,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -224,7 +224,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -244,7 +244,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {

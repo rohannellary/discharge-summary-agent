@@ -5,11 +5,11 @@
     "action": "ingest_pdfs",
     "inputs": {
       "pdf_paths": [
-        "/home/claude/discharge-agent/data/patients/PT-001/admission_note.txt",
-        "/home/claude/discharge-agent/data/patients/PT-001/progress_note_day2.txt",
-        "/home/claude/discharge-agent/data/patients/PT-001/discharge_summary.txt",
-        "/home/claude/discharge-agent/data/patients/PT-001/lab_results.txt",
-        "/home/claude/discharge-agent/data/patients/PT-001/medication_record.txt"
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\admission_note.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\progress_note_day2.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\discharge_summary.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\lab_results.txt",
+        "C:\\Users\\rohan\\OneDrive\\Desktop\\discharge-agent\\discharge-agent\\data\\patients\\PT-001\\medication_record.txt"
       ]
     },
     "result": {
@@ -24,19 +24,19 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
             "source": "lab_results",
             "page": 1,
-            "text": "LABORATORY RESULTS\n==================\nPatient: Margaret Chen    MRN: MRN-884721\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nUrine culture (sent 05/16) \u2014 result pending\nHbA1c \u2014 pending (sent to reference lab)\n\n\nReport generated by: Laboratory Information System",
+            "text": "LABORATORY RESULTS\n==================\nPatient: Margaret Chen    MRN: MRN-884721\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nUrine culture (sent 05/16) \ufffd result pending\nHbA1c \ufffd pending (sent to reference lab)\n\n\nReport generated by: Laboratory Information System",
             "method": "plaintext"
           },
           {
@@ -56,7 +56,7 @@
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -70,19 +70,19 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
             "source": "lab_results",
             "page": 1,
-            "text": "LABORATORY RESULTS\n==================\nPatient: Margaret Chen    MRN: MRN-884721\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nUrine culture (sent 05/16) \u2014 result pending\nHbA1c \u2014 pending (sent to reference lab)\n\n\nReport generated by: Laboratory Information System",
+            "text": "LABORATORY RESULTS\n==================\nPatient: Margaret Chen    MRN: MRN-884721\n\nCOMPLETE BLOOD COUNT (Admission):\nWBC:        11.2  [4.5-11.0]  H\nHemoglobin: 12.8  [12.0-16.0]\nHematocrit: 38.5  [36.0-48.0]\nPlatelets:  245   [150-400]\n\nCOMPREHENSIVE METABOLIC PANEL:\nSodium:     138   [136-145]\nPotassium:  3.2   [3.5-5.1]   L\nChloride:   101   [98-107]\nCO2:        18    [22-29]     L\nBUN:        24    [7-20]      H\nCreatinine: 1.4   [0.6-1.2]   H\nGlucose:    412   [70-100]    H\neGFR:       48    mL/min      (CKD Stage 3)\n\nPENDING RESULTS:\nUrine culture (sent 05/16) \ufffd result pending\nHbA1c \ufffd pending (sent to reference lab)\n\n\nReport generated by: Laboratory Information System",
             "method": "plaintext"
           }
         ],
@@ -96,13 +96,13 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           },
           {
@@ -122,7 +122,7 @@
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -136,7 +136,7 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           }
         ],
@@ -150,7 +150,7 @@
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -158,7 +158,7 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
@@ -172,13 +172,13 @@
           {
             "source": "progress_note_day2",
             "page": 1,
-            "text": "PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
+            "text": "PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent to reference lab)\n\n\nSigned: Dr. [Covering Physician]",
             "method": "plaintext"
           },
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ],
@@ -186,7 +186,7 @@
           {
             "source": "discharge_summary",
             "page": 1,
-            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \u2014 result pending (PENDING)\n- HbA1c \u2014 pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \u2014 appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
+            "text": "DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to subcutaneous insulin after anion gap closure. Received 3L IV NS. Potassium repleted. Blood glucose normalized. Nephrology consulted for CKD monitoring.\n\nPROCEDURES PERFORMED:\n- IV access x2\n- Continuous cardiac monitoring\n- Urinalysis\n- Chest X-ray (unremarkable)\n\n\nDISCHARGE MEDICATIONS:\n- Insulin Glargine 20 units SC Nightly\n- Lisinopril 20 mg PO Daily\n- Atorvastatin 40 mg PO Nightly\n- Aspirin 81 mg PO Daily\n\n\nPENDING RESULTS AT DISCHARGE:\n- Urine culture (sent 05/16) \ufffd result pending (PENDING)\n- HbA1c \ufffd pending (sent to reference lab) (PENDING)\n\n\nFOLLOW-UP INSTRUCTIONS:\n- Follow up with primary care physician in 1 week\n- Endocrinology referral \ufffd appointment to be scheduled\n- Recheck BMP in 1 week\n\n\nSigned: Dr. [Discharging Physician]",
             "method": "plaintext"
           }
         ]
@@ -328,13 +328,13 @@
         ],
         "pending_labs": [
           {
-            "test": "Urine culture (sent 05/16)",
+            "test": "Urine culture (sent 05/16) \ufffd result pending",
             "status": "PENDING",
             "requires_follow_up": true,
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
           },
           {
-            "test": "HbA1c \u2014 pending (sent to reference lab)",
+            "test": "HbA1c \ufffd pending (sent to reference lab)",
             "status": "PENDING",
             "requires_follow_up": true,
             "note": "Result pending at time of discharge \u2014 must NOT be assumed or filled in."
@@ -355,20 +355,20 @@
         "follow_up_instructions": [
           "INSTRUCTIONS:",
           "- Follow up with primary care physician in 1 week",
-          "- Endocrinology referral \u2014 appointment to be scheduled",
+          "- Endocrinology referral \ufffd appointment to be scheduled",
           "- Recheck BMP in 1 week"
         ],
         "hospital_course_raw": [
-          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent",
+          "[progress_note_day2 p1]: PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent",
           "[medication_record p1]: MEDICATION ADMINISTRATION RECORD\n==================================\nPatient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m",
-          "[progress_note_day2 p1]: PROGRESS NOTE \u2014 Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent",
+          "[progress_note_day2 p1]: PROGRESS NOTE \ufffd Day 2\n======================\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent",
           "[discharge_summary p1]: DISCHARGE SUMMARY\n=================\nPatient Name: Margaret Chen\nMRN: MRN-884721\nDate of Birth: 03/14/1958\nAdmission Date: 05/12/2024\nDischarge Date: 05/17/2024\n\nPRINCIPAL DIAGNOSIS: Type 2 Diabetes Mellitus with Diabetic Ketoacidosis\n\nSECONDARY DIAGNOSES:\n- Hypertension\n- Chronic Kidney Disease Stage 3\n- Obesity\n\n\nDISCHARGE CONDITION: Stable\n\nALLERGIES: Penicillin (hives)\n\nHOSPITAL COURSE:\n66F with known T2DM presenting with DKA. pH 7.21 on admission. Started on insulin drip; transitioned to sub"
         ]
       }
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479017.9425683,
-    "duration_ms": 10.729312896728516,
+    "timestamp": 1780480764.9733186,
+    "duration_ms": 9.006738662719727,
     "error": null
   },
   {
@@ -575,8 +575,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479017.965317,
-    "duration_ms": 22.64881134033203,
+    "timestamp": 1780480764.9898355,
+    "duration_ms": 16.516923904418945,
     "error": null
   },
   {
@@ -789,12 +789,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:17Z",
+      "timestamp": "2026-06-03T09:59:24Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479017.9654167,
-    "duration_ms": 0.060558319091796875,
+    "timestamp": 1780480764.9908676,
+    "duration_ms": 1.032114028930664,
     "error": null
   },
   {
@@ -885,8 +885,8 @@
       "note": "Medication reconciliation performed. All flagged changes require clinician review before finalization."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479017.9735298,
-    "duration_ms": 8.054256439208984,
+    "timestamp": 1780480764.9966748,
+    "duration_ms": 5.807161331176758,
     "error": null
   },
   {
@@ -909,8 +909,8 @@
       "note": "Checked 6 drug pairs. Found 0 interactions (0 major, 0 moderate)."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479017.973634,
-    "duration_ms": 0.07510185241699219,
+    "timestamp": 1780480764.9977064,
+    "duration_ms": 1.031637191772461,
     "error": null
   },
   {
@@ -921,14 +921,14 @@
     "result": {
       "pending": [
         {
-          "test_or_result": "Urine culture (sent 05/16) \u2014 result pending",
+          "test_or_result": "Urine culture (sent 05/16) \ufffd result pending",
           "status": "PENDING",
           "source": "progress_note_day2 p1",
           "requires_follow_up": true,
           "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
         },
         {
-          "test_or_result": "HbA1c \u2014 pending (sent to reference lab)",
+          "test_or_result": "HbA1c \ufffd pending (sent to reference lab)",
           "status": "PENDING",
           "source": "progress_note_day2 p1",
           "requires_follow_up": true,
@@ -939,8 +939,8 @@
       "note": "Found 2 pending items. These must appear in the discharge summary as PENDING \u2014 never filled with assumed values."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.0097914,
-    "duration_ms": 36.05389595031738,
+    "timestamp": 1780480765.02357,
+    "duration_ms": 25.8636474609375,
     "error": null
   },
   {
@@ -979,12 +979,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.009884,
-    "duration_ms": 0.06699562072753906,
+    "timestamp": 1780480765.02357,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -1023,12 +1023,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.0099354,
-    "duration_ms": 0.03218650817871094,
+    "timestamp": 1780480765.02357,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -1067,12 +1067,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.0099852,
-    "duration_ms": 0.028133392333984375,
+    "timestamp": 1780480765.0249782,
+    "duration_ms": 1.4081001281738281,
     "error": null
   },
   {
@@ -1084,7 +1084,7 @@
       "_meta": {
         "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
         "auto_finalized": false,
-        "generated_at": "2026-06-03T09:30:18Z",
+        "generated_at": "2026-06-03T09:59:25Z",
         "patient_id": "PT-001",
         "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
         "total_flags": 4,
@@ -1109,7 +1109,7 @@
           "Obesity"
         ]
       },
-      "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \u2014 result pending\n- HbA1c \u2014 pending (sent | Patient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m | PROGRESS NOTE \u2014 Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infec",
+      "hospital_course": "PROGRESS NOTE \ufffd Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infection\n\n#1. Hypertension\n#2. Chronic Kidney Disease Stage 3\n#3. Obesity\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Urine culture (sent 05/16) \ufffd result pending\n- HbA1c \ufffd pending (sent | Patient: Margaret Chen    MRN: MRN-884721\nPeriod: 05/12/2024 to 05/17/2024\n\nADMISSION MEDICATIONS (Home Medications on Admission):\nMetformin  1000 mg  PO  BID\nLisinopril  10 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nDISCHARGE MEDICATIONS:\nInsulin Glargine  20 units  SC  Nightly\nLisinopril  20 mg  PO  Daily\nAtorvastatin  40 mg  PO  Nightly\nAspirin  81 mg  PO  Daily\n\n\nNOTE: Changes from admission m | PROGRESS NOTE \ufffd Day 2\nPatient: Margaret Chen    MRN: MRN-884721\nDate: 05/13/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Urinary Tract Infec",
       "procedures": [
         "(unremarkable)",
         "IV access x2",
@@ -1158,12 +1158,12 @@
       },
       "pending_results": [
         {
-          "test": "Urine culture (sent 05/16) \u2014 result pending",
+          "test": "Urine culture (sent 05/16) \ufffd result pending",
           "status": "PENDING",
           "note": "Result not available at time of discharge \u2014 follow-up required"
         },
         {
-          "test": "HbA1c \u2014 pending (sent to reference lab)",
+          "test": "HbA1c \ufffd pending (sent to reference lab)",
           "status": "PENDING",
           "note": "Result not available at time of discharge \u2014 follow-up required"
         }
@@ -1171,7 +1171,7 @@
       "follow_up_instructions": [
         "INSTRUCTIONS:",
         "- Follow up with primary care physician in 1 week",
-        "- Endocrinology referral \u2014 appointment to be scheduled",
+        "- Endocrinology referral \ufffd appointment to be scheduled",
         "- Recheck BMP in 1 week"
       ],
       "discharge_condition": "Stable",
@@ -1281,7 +1281,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:17Z",
+          "timestamp": "2026-06-03T09:59:24Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1301,7 +1301,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1321,7 +1321,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1341,7 +1341,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:30:18Z",
+          "timestamp": "2026-06-03T09:59:25Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         }
       ],
@@ -1543,8 +1543,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780479018.0153224,
-    "duration_ms": 5.138635635375977,
+    "timestamp": 1780480765.0286844,
+    "duration_ms": 3.706216812133789,
     "error": null
   },
   {
@@ -1554,7 +1554,7 @@
     "inputs": {},
     "result": "Agent decided work is complete",
     "next_decision": "Finalizing output",
-    "timestamp": 1780479018.0153482,
+    "timestamp": 1780480765.0286844,
     "duration_ms": 0.0,
     "error": null
   }

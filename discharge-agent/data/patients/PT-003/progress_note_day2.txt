@@ -1,5 +1,5 @@
 
-PROGRESS NOTE â€” Day 2
+PROGRESS NOTE — Day 2
 ======================
 Patient: Sofia Ramirez    MRN: MRN-671209
 Date: 05/16/2024
@@ -18,8 +18,8 @@ Discharge Diagnosis: Acute Gastroenteritis
 Plan:
 - Continue current medications
 - Monitor labs
-- CT abdomen/pelvis â€” ordered, result PENDING
-- Beta-hCG â€” ordered (rule out ectopic) â€” PENDING
+- CT abdomen/pelvis — ordered, result PENDING
+- Beta-hCG — ordered (rule out ectopic) — PENDING
 
 
 Signed: Dr. [Covering Physician]

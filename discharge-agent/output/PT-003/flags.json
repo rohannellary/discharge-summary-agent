@@ -122,7 +122,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -142,7 +142,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -162,7 +162,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],
@@ -294,14 +294,14 @@
       "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
     },
     {
-      "test_or_result": "CT abdomen/pelvis \u2014 ordered, result PENDING",
+      "test_or_result": "CT abdomen/pelvis \ufffd ordered, result PENDING",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,
       "note": "Result pending \u2014 must NOT be assumed or filled in. Requires clinician follow-up."
     },
     {
-      "test_or_result": "Beta-hCG \u2014 ordered (rule out ectopic) \u2014 PENDING",
+      "test_or_result": "Beta-hCG \ufffd ordered (rule out ectopic) \ufffd PENDING",
       "status": "PENDING",
       "source": "progress_note_day2 p1",
       "requires_follow_up": true,

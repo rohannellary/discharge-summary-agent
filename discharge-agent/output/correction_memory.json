@@ -1,12 +1,21 @@
 [
   {
-    "field": "discharge_condition",
-    "original_draft": "Stable",
-    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
-    "edit_distance": 0.8461538461538461,
+    "field": "pending_results",
+    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\ufffd pending (sent ",
+    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
+    "edit_distance": 0.19799498746867172,
     "patient_context_hint": "patient:PT-001",
     "round_number": 1,
-    "reward": 0.15384615384615385
+    "reward": 0.8020050125313283
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
+    "edit_distance": 0.1166666666666667,
+    "patient_context_hint": "patient:PT-001",
+    "round_number": 1,
+    "reward": 0.8833333333333333
   },
   {
     "field": "medications.discharge_medications",
@@ -18,15 +27,6 @@
     "reward": 0.755
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
-    "edit_distance": 0.1166666666666667,
-    "patient_context_hint": "patient:PT-001",
-    "round_number": 1,
-    "reward": 0.8833333333333333
-  },
-  {
     "field": "diagnoses.principal_diagnosis",
     "original_draft": "[CONFLICTING DATA \u2014 REQUIRES CLINICIAN RESOLUTION]: [admission_note p1: Diabetic Ketoacidosis (DKA)] vs [progress_note_day2 p1: Urinary Tract Infection]; [progress_note_day2 p1: Urinary Tract Infectio",
     "clinician_correction": "admission_note p1: Diabetic Ketoacidosis (DKA) [RESOLVED BY CLINICIAN REVIEW]",
@@ -36,22 +36,31 @@
     "reward": 0.4548736462093863
   },
   {
-    "field": "pending_results",
-    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\u2014 pending (sent ",
-    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
-    "edit_distance": 0.19799498746867172,
+    "field": "discharge_condition",
+    "original_draft": "Stable",
+    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
+    "edit_distance": 0.8461538461538461,
     "patient_context_hint": "patient:PT-001",
     "round_number": 1,
-    "reward": 0.8020050125313283
+    "reward": 0.15384615384615385
   },
   {
-    "field": "discharge_condition",
-    "original_draft": "Improved",
-    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
-    "edit_distance": 0.8160919540229885,
+    "field": "pending_results",
+    "original_draft": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\ufffd pendin",
+    "clinician_correction": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
+    "edit_distance": 0.21499999999999997,
     "patient_context_hint": "patient:PT-002",
     "round_number": 2,
-    "reward": 0.1839080459770115
+    "reward": 0.785
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "edit_distance": 0.0,
+    "patient_context_hint": "patient:PT-002",
+    "round_number": 2,
+    "reward": 1.0
   },
   {
     "field": "medications.discharge_medications",
@@ -63,31 +72,31 @@
     "reward": 1.0
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "edit_distance": 0.0,
+    "field": "discharge_condition",
+    "original_draft": "Improved",
+    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
+    "edit_distance": 0.8160919540229885,
     "patient_context_hint": "patient:PT-002",
     "round_number": 2,
-    "reward": 1.0
+    "reward": 0.1839080459770115
   },
   {
     "field": "pending_results",
-    "original_draft": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\u2014 pendin",
-    "clinician_correction": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
-    "edit_distance": 0.18000000000000005,
-    "patient_context_hint": "patient:PT-002",
-    "round_number": 2,
-    "reward": 0.82
-  },
-  {
-    "field": "discharge_condition",
-    "original_draft": "Stable",
-    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
-    "edit_distance": 0.8461538461538461,
+    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\ufffd pending (sent ",
+    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
+    "edit_distance": 0.19799498746867172,
     "patient_context_hint": "patient:PT-001",
     "round_number": 3,
-    "reward": 0.15384615384615385
+    "reward": 0.8020050125313283
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
+    "edit_distance": 0.1166666666666667,
+    "patient_context_hint": "patient:PT-001",
+    "round_number": 3,
+    "reward": 0.8833333333333333
   },
   {
     "field": "medications.discharge_medications",
@@ -99,15 +108,6 @@
     "reward": 0.755
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
-    "edit_distance": 0.1166666666666667,
-    "patient_context_hint": "patient:PT-001",
-    "round_number": 3,
-    "reward": 0.8833333333333333
-  },
-  {
     "field": "diagnoses.principal_diagnosis",
     "original_draft": "[CONFLICTING DATA \u2014 REQUIRES CLINICIAN RESOLUTION]: [admission_note p1: Diabetic Ketoacidosis (DKA)] vs [progress_note_day2 p1: Urinary Tract Infection]; [progress_note_day2 p1: Urinary Tract Infectio",
     "clinician_correction": "admission_note p1: Diabetic Ketoacidosis (DKA) [RESOLVED BY CLINICIAN REVIEW]",
@@ -117,22 +117,31 @@
     "reward": 0.4548736462093863
   },
   {
-    "field": "pending_results",
-    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\u2014 pending (sent ",
-    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
-    "edit_distance": 0.19799498746867172,
+    "field": "discharge_condition",
+    "original_draft": "Stable",
+    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
+    "edit_distance": 0.8461538461538461,
     "patient_context_hint": "patient:PT-001",
     "round_number": 3,
-    "reward": 0.8020050125313283
+    "reward": 0.15384615384615385
   },
   {
-    "field": "discharge_condition",
-    "original_draft": "Improved",
-    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
-    "edit_distance": 0.8160919540229885,
+    "field": "pending_results",
+    "original_draft": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\ufffd pendin",
+    "clinician_correction": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
+    "edit_distance": 0.21499999999999997,
     "patient_context_hint": "patient:PT-002",
     "round_number": 4,
-    "reward": 0.1839080459770115
+    "reward": 0.785
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "edit_distance": 0.0,
+    "patient_context_hint": "patient:PT-002",
+    "round_number": 4,
+    "reward": 1.0
   },
   {
     "field": "medications.discharge_medications",
@@ -144,31 +153,31 @@
     "reward": 1.0
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "edit_distance": 0.0,
+    "field": "discharge_condition",
+    "original_draft": "Improved",
+    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
+    "edit_distance": 0.8160919540229885,
     "patient_context_hint": "patient:PT-002",
     "round_number": 4,
-    "reward": 1.0
+    "reward": 0.1839080459770115
   },
   {
     "field": "pending_results",
-    "original_draft": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\u2014 pendin",
-    "clinician_correction": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
-    "edit_distance": 0.18000000000000005,
-    "patient_context_hint": "patient:PT-002",
-    "round_number": 4,
-    "reward": 0.82
-  },
-  {
-    "field": "discharge_condition",
-    "original_draft": "Stable",
-    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
-    "edit_distance": 0.8461538461538461,
+    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\ufffd pending (sent ",
+    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\ufffd result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
+    "edit_distance": 0.19799498746867172,
     "patient_context_hint": "patient:PT-001",
     "round_number": 5,
-    "reward": 0.15384615384615385
+    "reward": 0.8020050125313283
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\ufffd appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
+    "edit_distance": 0.1166666666666667,
+    "patient_context_hint": "patient:PT-001",
+    "round_number": 5,
+    "reward": 0.8833333333333333
   },
   {
     "field": "medications.discharge_medications",
@@ -180,15 +189,6 @@
     "reward": 0.755
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\"]",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Follow up with primary care physician in 1 week\", \"- Endocrinology referral \\u2014 appointment to be scheduled\", \"- Recheck BMP in 1 week\", \"Patient counselled on warning signs re",
-    "edit_distance": 0.1166666666666667,
-    "patient_context_hint": "patient:PT-001",
-    "round_number": 5,
-    "reward": 0.8833333333333333
-  },
-  {
     "field": "diagnoses.principal_diagnosis",
     "original_draft": "[CONFLICTING DATA \u2014 REQUIRES CLINICIAN RESOLUTION]: [admission_note p1: Diabetic Ketoacidosis (DKA)] vs [progress_note_day2 p1: Urinary Tract Infection]; [progress_note_day2 p1: Urinary Tract Infectio",
     "clinician_correction": "admission_note p1: Diabetic Ketoacidosis (DKA) [RESOLVED BY CLINICIAN REVIEW]",
@@ -198,22 +198,31 @@
     "reward": 0.4548736462093863
   },
   {
-    "field": "pending_results",
-    "original_draft": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"HbA1c \\u2014 pending (sent ",
-    "clinician_correction": "[{\"test\": \"Urine culture (sent 05/16) \\u2014 result pending\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by discha",
-    "edit_distance": 0.19799498746867172,
+    "field": "discharge_condition",
+    "original_draft": "Stable",
+    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
+    "edit_distance": 0.8461538461538461,
     "patient_context_hint": "patient:PT-001",
     "round_number": 5,
-    "reward": 0.8020050125313283
+    "reward": 0.15384615384615385
   },
   {
-    "field": "discharge_condition",
-    "original_draft": "Improved",
-    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
-    "edit_distance": 0.8160919540229885,
+    "field": "pending_results",
+    "original_draft": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\ufffd pendin",
+    "clinician_correction": "[{\"test\": \"Sputum culture \\ufffd pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
+    "edit_distance": 0.21499999999999997,
     "patient_context_hint": "patient:PT-002",
     "round_number": 6,
-    "reward": 0.1839080459770115
+    "reward": 0.785
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\ufffd INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
+    "edit_distance": 0.0,
+    "patient_context_hint": "patient:PT-002",
+    "round_number": 6,
+    "reward": 1.0
   },
   {
     "field": "medications.discharge_medications",
@@ -225,31 +234,31 @@
     "reward": 1.0
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Pulmonology follow-up in 2 weeks\", \"- Cardiology follow-up in 1 week \\u2014 INR check and amiodarone monitoring\", \"- Repeat CXR in 4 weeks\", \"- Resume Warfarin per home dose; INR ",
-    "edit_distance": 0.0,
+    "field": "discharge_condition",
+    "original_draft": "Improved",
+    "clinician_correction": "Improved \u2014 clinical improvement from admission status, ambulating independently",
+    "edit_distance": 0.8160919540229885,
     "patient_context_hint": "patient:PT-002",
     "round_number": 6,
-    "reward": 1.0
+    "reward": 0.1839080459770115
   },
   {
     "field": "pending_results",
-    "original_draft": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required\"}, {\"test\": \"INR (draw 05/15) \\u2014 pendin",
-    "clinician_correction": "[{\"test\": \"Sputum culture \\u2014 pending (ordered 05/09)\", \"status\": \"PENDING\", \"note\": \"Result not available at time of discharge \\u2014 follow-up required \\u2014 Ensure results reviewed by dischargi",
-    "edit_distance": 0.18000000000000005,
-    "patient_context_hint": "patient:PT-002",
-    "round_number": 6,
-    "reward": 0.82
-  },
-  {
-    "field": "discharge_condition",
-    "original_draft": "[MISSING \u2014 REQUIRES CLINICIAN INPUT]",
-    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
-    "edit_distance": 0.7407407407407407,
+    "original_draft": "[{\"test\": \"34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained\", \"status\": \"PENDING\", \"note\": \"Result not available at time of disch",
+    "clinician_correction": "[{\"test\": \"34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained\", \"status\": \"PENDING\", \"note\": \"Result not available at time of disch",
+    "edit_distance": 0.0,
     "patient_context_hint": "patient:PT-003_holdout",
     "round_number": 7,
-    "reward": 0.2592592592592593
+    "reward": 1.0
+  },
+  {
+    "field": "follow_up_instructions",
+    "original_draft": "[\"INSTRUCTIONS:\", \"- Return to ED if pain worsens, fever, or unable to tolerate PO\", \"- Follow up with PCP in 48\\ufffd72 hours\"]",
+    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Return to ED if pain worsens, fever, or unable to tolerate PO\", \"- Follow up with PCP in 48\\ufffd72 hours\", \"Patient counselled on warning signs requiring return to ED.\", \"Medicat",
+    "edit_distance": 0.22560975609756095,
+    "patient_context_hint": "patient:PT-003_holdout",
+    "round_number": 7,
+    "reward": 0.774390243902439
   },
   {
     "field": "medications.discharge_medications",
@@ -261,21 +270,12 @@
     "reward": 0.61
   },
   {
-    "field": "follow_up_instructions",
-    "original_draft": "[\"INSTRUCTIONS:\", \"- Return to ED if pain worsens, fever, or unable to tolerate PO\", \"- Follow up with PCP in 48\\u201372 hours\"]",
-    "clinician_correction": "[\"INSTRUCTIONS:\", \"- Return to ED if pain worsens, fever, or unable to tolerate PO\", \"- Follow up with PCP in 48\\u201372 hours\", \"Patient counselled on warning signs requiring return to ED.\", \"Medicat",
-    "edit_distance": 0.22560975609756095,
+    "field": "discharge_condition",
+    "original_draft": "[MISSING \u2014 REQUIRES CLINICIAN INPUT]",
+    "clinician_correction": "Stable \u2014 hemodynamically stable, tolerating oral intake, pain controlled",
+    "edit_distance": 0.7407407407407407,
     "patient_context_hint": "patient:PT-003_holdout",
     "round_number": 7,
-    "reward": 0.774390243902439
-  },
-  {
-    "field": "pending_results",
-    "original_draft": "[{\"test\": \"34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained\", \"status\": \"PENDING\", \"note\": \"Result not available at time of disch",
-    "clinician_correction": "[{\"test\": \"34F presenting with 12h acute onset RLQ pain, nausea, vomiting. Vital signs stable. WBC 11.2. Surgical consult obtained\", \"status\": \"PENDING\", \"note\": \"Result not available at time of disch",
-    "edit_distance": 0.0,
-    "patient_context_hint": "patient:PT-003_holdout",
-    "round_number": 7,
-    "reward": 1.0
+    "reward": 0.2592592592592593
   }
 ]

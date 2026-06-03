@@ -88,7 +88,7 @@ def run_single_patient(patient_id: str, pdf_paths: list, client, output_dir: str
 
     # Human-readable trace
     trace_txt_path = os.path.join(output_dir, "trace_readable.txt")
-    with open(trace_txt_path, "w") as f:
+    with open(trace_txt_path, "w", encoding="utf-8") as f:
         f.write(f"AGENT TRACE — Patient {patient_id}\n")
         f.write(f"{'='*60}\n\n")
         for step in result["trace"]:

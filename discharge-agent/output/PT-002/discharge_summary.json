@@ -2,7 +2,7 @@
   "_meta": {
     "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
     "auto_finalized": false,
-    "generated_at": "2026-06-03T09:30:18Z",
+    "generated_at": "2026-06-03T09:59:25Z",
     "patient_id": "PT-002",
     "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
     "total_flags": 4,
@@ -27,7 +27,7 @@
       "Type 2 Diabetes"
     ]
   },
-  "hospital_course": "PROGRESS NOTE \u2014 Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | PROGRESS NOTE \u2014 Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | Patient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibril",
+  "hospital_course": "PROGRESS NOTE \ufffd Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | PROGRESS NOTE \ufffd Day 2\nPatient: Robert Okafor    MRN: MRN-334556\nDate: 05/10/2024\n\nSUBJECTIVE:\nPatient reports improved symptoms. Tolerating medications.\n\nOBJECTIVE:\nVitals: BP 132/80, HR 88, Temp 37.2, RR 16, O2 Sat 98% RA\n\nASSESSMENT AND PLAN:\nDischarge Diagnosis: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\n#1. Atrial Fibrillation\n#2. Heart Failure with reduced EF (HFrEF)\n#3. Type 2 Diabetes\n\nPlan:\n- Continue current medications\n- Monitor labs\n- Sputum cultu | Patient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAdmission Date: 05/09/2024\nDischarge Date: 05/14/2024\n\nPRINCIPAL DIAGNOSIS: Acute Exacerbation of COPD, Community-Acquired Pneumonia\n\nSECONDARY DIAGNOSES:\n- Atrial Fibril",
   "procedures": [
     "(RLL infiltrate)",
     "(EF 35%)",
@@ -100,12 +100,12 @@
   },
   "pending_results": [
     {
-      "test": "Sputum culture \u2014 pending (ordered 05/09)",
+      "test": "Sputum culture \ufffd pending (ordered 05/09)",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     },
     {
-      "test": "INR (draw 05/15) \u2014 pending, warfarin dose adjustment required once available",
+      "test": "INR (draw 05/15) \ufffd pending, warfarin dose adjustment required once available",
       "status": "PENDING",
       "note": "Result not available at time of discharge \u2014 follow-up required"
     },
@@ -118,7 +118,7 @@
   "follow_up_instructions": [
     "INSTRUCTIONS:",
     "- Pulmonology follow-up in 2 weeks",
-    "- Cardiology follow-up in 1 week \u2014 INR check and amiodarone monitoring",
+    "- Cardiology follow-up in 1 week \ufffd INR check and amiodarone monitoring",
     "- Repeat CXR in 4 weeks",
     "- Resume Warfarin per home dose; INR to be checked by PCP within 3 days"
   ],
@@ -246,7 +246,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -279,7 +279,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -299,7 +299,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -319,7 +319,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:30:18Z",
+      "timestamp": "2026-06-03T09:59:25Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],
