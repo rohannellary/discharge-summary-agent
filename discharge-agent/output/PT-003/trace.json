@@ -342,8 +342,8 @@
       }
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1118338,
-    "duration_ms": 4.554510116577148,
+    "timestamp": 1780563998.033875,
+    "duration_ms": 4.755258560180664,
     "error": null
   },
   {
@@ -466,8 +466,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1243594,
-    "duration_ms": 12.525558471679688,
+    "timestamp": 1780563998.0461376,
+    "duration_ms": 12.262582778930664,
     "error": null
   },
   {
@@ -716,12 +716,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:38Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1243594,
-    "duration_ms": 0.0,
+    "timestamp": 1780563998.0471764,
+    "duration_ms": 1.0387897491455078,
     "error": null
   },
   {
@@ -776,8 +776,8 @@
       "note": "Medication reconciliation performed. All flagged changes require clinician review before finalization."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1297317,
-    "duration_ms": 5.372285842895508,
+    "timestamp": 1780563998.051377,
+    "duration_ms": 4.20069694519043,
     "error": null
   },
   {
@@ -798,7 +798,7 @@
       "note": "Checked 1 drug pairs. Found 0 interactions (0 major, 0 moderate)."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1297317,
+    "timestamp": 1780563998.051377,
     "duration_ms": 0.0,
     "error": null
   },
@@ -842,8 +842,8 @@
       "note": "Found 4 pending items. These must appear in the discharge summary as PENDING \u2014 never filled with assumed values."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1509755,
-    "duration_ms": 21.243810653686523,
+    "timestamp": 1780563998.072504,
+    "duration_ms": 21.126985549926758,
     "error": null
   },
   {
@@ -882,12 +882,12 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:38Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1520047,
-    "duration_ms": 1.0292530059814453,
+    "timestamp": 1780563998.072504,
+    "duration_ms": 0.0,
     "error": null
   },
   {
@@ -926,11 +926,11 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:38Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1520047,
+    "timestamp": 1780563998.072504,
     "duration_ms": 0.0,
     "error": null
   },
@@ -943,7 +943,7 @@
       "_meta": {
         "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
         "auto_finalized": false,
-        "generated_at": "2026-06-03T09:59:25Z",
+        "generated_at": "2026-06-04T09:06:38Z",
         "patient_id": "PT-003",
         "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
         "total_flags": 4,
@@ -1145,7 +1145,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:59:25Z",
+          "timestamp": "2026-06-04T09:06:38Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1165,7 +1165,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:59:25Z",
+          "timestamp": "2026-06-04T09:06:38Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1185,7 +1185,7 @@
           },
           "requires_clinician_review": true,
           "auto_resolved": false,
-          "timestamp": "2026-06-03T09:59:25Z",
+          "timestamp": "2026-06-04T09:06:38Z",
           "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
         },
         {
@@ -1312,8 +1312,8 @@
       ]
     },
     "next_decision": "Tool succeeded \u2014 updating state and re-planning",
-    "timestamp": 1780480765.1545444,
-    "duration_ms": 2.5396347045898438,
+    "timestamp": 1780563998.0762172,
+    "duration_ms": 3.7131309509277344,
     "error": null
   },
   {
@@ -1323,7 +1323,7 @@
     "inputs": {},
     "result": "Agent decided work is complete",
     "next_decision": "Finalizing output",
-    "timestamp": 1780480765.1545444,
+    "timestamp": 1780563998.0762172,
     "duration_ms": 0.0,
     "error": null
   }

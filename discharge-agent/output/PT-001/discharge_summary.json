@@ -2,7 +2,7 @@
   "_meta": {
     "document_type": "DISCHARGE SUMMARY DRAFT \u2014 FOR CLINICIAN REVIEW ONLY",
     "auto_finalized": false,
-    "generated_at": "2026-06-03T09:59:25Z",
+    "generated_at": "2026-06-04T09:06:37Z",
     "patient_id": "PT-001",
     "warning": "THIS IS AN AI-GENERATED DRAFT. It must be reviewed and verified by a licensed clinician before use. Fields marked MISSING require clinician input. Fields marked PENDING await outstanding results. Conflicts must be resolved by the treating team.",
     "total_flags": 4,
@@ -199,7 +199,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:24Z",
+      "timestamp": "2026-06-04T09:06:37Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -219,7 +219,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:37Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -239,7 +239,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:37Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     },
     {
@@ -259,7 +259,7 @@
       },
       "requires_clinician_review": true,
       "auto_resolved": false,
-      "timestamp": "2026-06-03T09:59:25Z",
+      "timestamp": "2026-06-04T09:06:37Z",
       "note": "This item has been flagged for mandatory clinician review before the discharge summary can be finalized."
     }
   ],

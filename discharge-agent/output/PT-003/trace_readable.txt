@@ -11,19 +11,19 @@ AGENT TRACE — Patient PT-003
   Reasoning: Check for cross-document contradictions
   Result: {'conflicts': [{'type': 'DATE_CONFLICT', 'severity': 'MEDIUM', 'description': 'Inconsistent discharge date across documents', 'field': 'discharge_date', 'dates_found': [{'source': 'admission_note p1',
   Next: Tool succeeded — updating state and re-planning
-  Duration: 13ms
+  Duration: 12ms
 
 [Step 3] Action: escalate
   Reasoning: Found 1 conflict(s) — escalating all as single flag
   Result: {'id': 'FLAG-0001', 'type': 'DIAGNOSIS_CONFLICT', 'severity': 'HIGH', 'message': '1 data conflict(s): Inconsistent discharge date across documents', 'field': 'principal_diagnosis', 'details': {'confli
   Next: Tool succeeded — updating state and re-planning
-  Duration: 0ms
+  Duration: 1ms
 
 [Step 4] Action: reconcile_meds
   Reasoning: Compare admission vs discharge medications
   Result: {'admission_medication_count': 0, 'discharge_medication_count': 2, 'changes': [{'type': 'NEW', 'drug': 'Ondansetron', 'admission_dose': None, 'discharge_dose': '4 mg', 'reason_documented': None, 'flag
   Next: Tool succeeded — updating state and re-planning
-  Duration: 5ms
+  Duration: 4ms
 
 [Step 5] Action: check_drug_interactions
   Reasoning: Check discharge medications for interactions
@@ -41,7 +41,7 @@ AGENT TRACE — Patient PT-003
   Reasoning: Undocumented med change #1: Ondansetron — escalating
   Result: {'id': 'FLAG-0002', 'type': 'UNDOCUMENTED_MED_CHANGE', 'severity': 'HIGH', 'message': 'New medication added with no documented reason', 'field': 'medications', 'details': {'type': 'NEW', 'drug': 'Onda
   Next: Tool succeeded — updating state and re-planning
-  Duration: 1ms
+  Duration: 0ms
 
 [Step 8] Action: escalate
   Reasoning: Undocumented med change #2: Ibuprofen — escalating
@@ -51,9 +51,9 @@ AGENT TRACE — Patient PT-003
 
 [Step 9] Action: build_summary
   Reasoning: All checks complete — assembling final discharge summary draft
-  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-03T09:59:25Z', 'patient_id': 'PT-003', 'warning': 'THIS IS AN AI-GE
+  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-04T09:06:38Z', 'patient_id': 'PT-003', 'warning': 'THIS IS AN AI-GE
   Next: Tool succeeded — updating state and re-planning
-  Duration: 3ms
+  Duration: 4ms
 
 [Step 10] Action: DONE
   Reasoning: Summary built — all flags raised — done

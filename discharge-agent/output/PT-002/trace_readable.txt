@@ -5,19 +5,19 @@ AGENT TRACE — Patient PT-002
   Reasoning: First step: ingest all patient PDFs
   Result: {'sections': {'demographics': [{'source': 'admission_note', 'page': 1, 'text': 'ADMISSION NOTE\n==============\nPatient Name: Robert Okafor\nMRN: MRN-334556\nDate of Birth: 11/28/1945\nAge: 78 years o
   Next: Tool succeeded — updating state and re-planning
-  Duration: 3ms
+  Duration: 4ms
 
 [Step 2] Action: detect_conflicts
   Reasoning: Check for cross-document contradictions
   Result: {'conflicts': [{'type': 'DATE_CONFLICT', 'severity': 'MEDIUM', 'description': 'Inconsistent discharge date across documents', 'field': 'discharge_date', 'dates_found': [{'source': 'admission_note p1',
   Next: Tool succeeded — updating state and re-planning
-  Duration: 16ms
+  Duration: 14ms
 
 [Step 3] Action: escalate
   Reasoning: Found 1 conflict(s) — escalating all as single flag
   Result: {'id': 'FLAG-0001', 'type': 'DIAGNOSIS_CONFLICT', 'severity': 'HIGH', 'message': '1 data conflict(s): Inconsistent discharge date across documents', 'field': 'principal_diagnosis', 'details': {'confli
   Next: Tool succeeded — updating state and re-planning
-  Duration: 0ms
+  Duration: 1ms
 
 [Step 4] Action: reconcile_meds
   Reasoning: Compare admission vs discharge medications
@@ -29,13 +29,13 @@ AGENT TRACE — Patient PT-002
   Reasoning: Check discharge medications for interactions
   Result: {'interactions': [{'drug_a': 'warfarin', 'drug_b': 'amiodarone', 'severity': 'MAJOR', 'description': 'Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing warfarin levels.', 'clinical_signi
   Next: Tool succeeded — updating state and re-planning
-  Duration: 1ms
+  Duration: 0ms
 
 [Step 6] Action: escalate
   Reasoning: Found 2 MAJOR drug interaction(s) — escalating as CRITICAL flag
   Result: {'id': 'FLAG-0002', 'type': 'DRUG_INTERACTION', 'severity': 'CRITICAL', 'message': 'MAJOR interaction between warfarin and amiodarone: Amiodarone inhibits CYP2C9 and CYP3A4, substantially increasing w
   Next: Tool succeeded — updating state and re-planning
-  Duration: 0ms
+  Duration: 1ms
 
 [Step 7] Action: check_pending
   Reasoning: Find all pending/outstanding results
@@ -57,9 +57,9 @@ AGENT TRACE — Patient PT-002
 
 [Step 10] Action: build_summary
   Reasoning: All checks complete — assembling final discharge summary draft
-  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-03T09:59:25Z', 'patient_id': 'PT-002', 'warning': 'THIS IS AN AI-GE
+  Result: {'_meta': {'document_type': 'DISCHARGE SUMMARY DRAFT — FOR CLINICIAN REVIEW ONLY', 'auto_finalized': False, 'generated_at': '2026-06-04T09:06:38Z', 'patient_id': 'PT-002', 'warning': 'THIS IS AN AI-GE
   Next: Tool succeeded — updating state and re-planning
-  Duration: 4ms
+  Duration: 3ms
 
 [Step 11] Action: DONE
   Reasoning: Summary built — all flags raised — done
