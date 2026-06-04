@@ -344,7 +344,7 @@ function actionIcon(a) {
 }
 
 function showTab(name) {
-  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', ['summary','medications','flags','trace','part2'][i] === name));
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('active', ['summary','medications','flags','trace','part2','ocr'][i] === name));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
 }
@@ -359,7 +359,7 @@ function mv(val) {
 
 function renderResults(data) {
   if (!data) return;
-  const rawText = JSON.stringify(data).substring(0, 3000);
+  const rawText = data.extracted_text || JSON.stringify(data.summary, null, 2).substring(0, 3000);
   document.getElementById('progress-panel').classList.remove('active');
   document.getElementById('results').classList.add('active');
 
